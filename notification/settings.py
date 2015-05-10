@@ -25,7 +25,7 @@ SECRET_KEY = ')npag2w-37tdmou--n9f#xnt(=2jy5k#yvn5sw6pbipsr&w#qf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://arcane-mountain-4106.herokuapp.com/"]
 
 
 # Application definition
