@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="width=1px">
+<div style="width=700px; auto;">
+  {% if form.errors %}
+    <p class="error">Sorry, that's not a valid username or password</p>
+  {% endif %}
+
+  <form action="/accounts/auth/" method="post">{% csrf_token %}
+    <label for="username"style="font-weight:normal;color:#27D6D6;letter-spacing:1pt;word-spacing:2pt;font-size:20px;text-align:left;font-family:trebuchet MS, sans-serif;line-height:1;">User name:</label>
+    <input type="text" name="username" value="" id="username">
+    <label for="password" style="font-weight:normal;color:#27D6D6;letter-spacing:1pt;word-spacing:2pt;font-size:20px;text-align:left;font-family:trebuchet MS, sans-serif;line-height:1;">Password:</label>
+    <input type="password" name="password" value="" id="password">
+
+    <input type="submit" value="Login" style="border-radius: 28px;
+  background: #eeeeee;
+  cursor:pointer;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  padding: 05px 30px 05px 30px;
+ "/>
+
+
+ <p style="font-weight:normal;color:#27D6D6;letter-spacing:1pt;word-spacing:2pt;font-size:64px;text-align:left;font-family:trebuchet MS, sans-serif;line-height:1;">
+ Enter your Username and Password.
+ </p>
+    
+  </form>
+  </div>
+</div>
+{% endblock %}

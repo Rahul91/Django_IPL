@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}My Base Template{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    
+</head>
+
+<body>
+	<div id="page" style="">
+
+
+    <div id="content">
+    
+	{% if messages %}
+	<ul class="messages">
+	    {% for message in messages %}
+	    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+	    {% endfor %}
+	</ul>
+	{% endif %}
+        
+        {% block content %}  {% endblock %}
+	</div>
+
+	{% if login %}
+    <div id="login" style="color:black;padding: 15px; border:1px solid black; width:450px;height: 500px;background-color:#DDDDDD;float:right;">
+        {% block login %}{% endblock %}
+	</div>
+	{% endif %}
+
+		{% if loggedin %}
+    <div id="loggedin" style="">
+        {% block loggedin %}{% endblock %}
+	</div>
+	{% endif %}
+
+
+
+
+	</div>
+		
+</body>
+</html>
