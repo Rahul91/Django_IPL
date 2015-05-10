@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 #from django.template.loader import get_template
 #from django.template import Context
 from models import signup
@@ -62,6 +62,8 @@ def register_user(request):
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/accounts/register_success')
+     	else:
+     		return HttpResponseRedirect('/accounts/bad_request')
         
     else:
     	
@@ -100,3 +102,6 @@ def unsuscibe(request,id):
 	d=User.objects.get(id=id)
 	d.delete()
 	return HttpResponseRedirect('/')
+
+def bad_request(request):
+	return render(request, "bad_request.html")

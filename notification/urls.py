@@ -29,4 +29,6 @@ urlpatterns = [
     url(r'^accounts/register/$', 'signups.views.register_user'),
     url(r'^accounts/register_success/$', 'signups.views.register_success'),
     url(r'^unsuscribed/(?P<id>\d+)/$', 'signups.views.unsuscibe'),
+    url(r'^accounts/bad_request/$', 'signups.views.bad_request'),
+    
 ]
