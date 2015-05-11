@@ -4,6 +4,7 @@ A Python-django based Website
 #Project Detail
 A python-django based website, that lets user, suscribe to lastest Pepsi IPL 2015 scores and news.
 The project is up-and-running i.e. deployed on Heroku.
+Notification is the name of Project and signups is the App.
     
     Link: http://arcane-mountain-4106.herokuapp.com/
 
