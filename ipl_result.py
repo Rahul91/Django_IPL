@@ -17,7 +17,7 @@ count=len(p)
 #	n,m=a.find_all("div", {"class":"team_name_completed"}), a.find_all("div", {"class":"teams_scores"})
 #	print n.find("div", ) , m
 
-for i in range(count/4):
+for i in range(count/2):
 	s=x[i]
 	m,n=p[i], p[i+1]
 	print s.text
