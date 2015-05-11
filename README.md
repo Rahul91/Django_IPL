@@ -17,12 +17,12 @@ Notification is the name of Project and signups is the App.
 
 
 #Features
-1. Although the content of Javascript alert() is hardcoded, I  have written a script, namely ipl_result.py that scrapes the latest score from internet and outputs on screens, now this output can be feed into alert() manually. So the maintainer doesnot have to search for lastest score, instead he can just run the script and feed the output in the alert()
+1. Although the content of Javascript <i>alert()</i> is hardcoded, I  have written a script, namely  <b>ipl_result.py</b>  that scrapes the latest score from internet and outputs on screens, now this output can be feed into alert() manually. So the maintainer doesnot have to search for lastest score, instead he can just run the script and feed the output in the  <i>alert()</i>
 
 2. Settings.py is not hardcoded, for template paths and directories. Therefore, git clone will work fine.
 
 #Scope/Improvments
-1. alert() is hardcoded, thus it must be changed/refreshed by maintainer every day once, for the notification to be relevent.
+1.  <i>alert()</i> is hardcoded, thus it must be changed/refreshed by maintainer every day once, for the notification to be relevent.
 2. As the code is deployed on heroku, after refresh, it again needs to be pushed to heroku masters.
 3. The database used is sqlite3, which is not suited for bigger applicaition with high traffic, therefore it is recomended to migrate to MySql or Postgrace.
 
