@@ -32,7 +32,7 @@ Notification is the name of Project and signups is the App.
 
             $virtualenv <env_name>
             $source <env_name>/bin/activate
-            $mkdir <env_name>
+            $cd <env_name>
 
 2. Clone this repo into your machine by:
 
