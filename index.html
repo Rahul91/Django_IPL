@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Django_IPL by Rahul91</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Django_IPL</h1>
+      <h2 class="project-tagline">A Python-django based Website</h2>
+      <a href="https://github.com/Rahul91/Django_IPL" class="btn">View on GitHub</a>
+      <a href="https://github.com/Rahul91/Django_IPL/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Rahul91/Django_IPL/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="django_ipl" class="anchor" href="#django_ipl" aria-hidden="true"><span class="octicon octicon-link"></span></a>Django_IPL</h1>
+
+<p>A Python-django based Website</p>
+
+<h1>
+<a id="project-detail" class="anchor" href="#project-detail" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Detail</h1>
+
+<p>A python-django based website, that lets user, suscribe to lastest Pepsi IPL 2015 scores and news.
+The project is up-and-running i.e. deployed on Heroku.
+Notification is the name of Project and signups is the App.</p>
+
+<pre><code>Link: http://arcane-mountain-4106.herokuapp.com/
+</code></pre>
+
+<h1>
+<a id="logic-flow" class="anchor" href="#logic-flow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Logic Flow</h1>
+
+<ol>
+<li>User visits, the home page of the website, if he is already registered, he can then directly go to Login page, if not he can then go to Register page for registration.</li>
+<li>If Registered properly, he will be routed to Registered-Successfully page. Now he can click the link present in this page to login.</li>
+<li>After logging-in, user can see a notification button on top left, to which on clicking, a Javascript alert pops up that shows the latest score of IPL.</li>
+<li>User can now, either choose logout or unsuscribe, depending on his choice, he will be then directed to corressponding page. Unsuscribe will be directed to home page, where as logout will direct the user to logout page.</li>
+</ol>
+
+<h1>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h1>
+
+<ol>
+<li><p>Although the content of Javascript alert() is hardcoded, I  have written a script, namely ipl_result.py that scrapes the latest score from internet and outputs on screens, now this output can be feed into alert() manually. So the maintainer doesnot have to search for lastest score, instead he can just run the script and feed the output in the alert()</p></li>
+<li><p>Settings.py is not hardcoded, for template paths and directories. Therefore, git clone will work fine.</p></li>
+</ol>
+
+<h1>
+<a id="scopeimprovments" class="anchor" href="#scopeimprovments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scope/Improvments</h1>
+
+<ol>
+<li>alert() is hardcoded, thus it must be changed/refreshed by maintainer every day once, for the notification to be relevent.</li>
+<li>As the code is deployed on heroku, after refresh, it again needs to be pushed to heroku masters.</li>
+<li>The database used is sqlite3, which is not suited for bigger applicaition with high traffic, therefore it is recomended to migrate to MySql or Postgrace.</li>
+</ol>
+
+<h1>
+<a id="cloning-the-repository" class="anchor" href="#cloning-the-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cloning the repository</h1>
+
+<ol>
+<li>
+<p>Create a virtualenv, activate it and get in:</p>
+
+<pre><code>    $virtualenv &lt;env_name&gt;
+    $source &lt;env_name&gt;/bin/activate
+    $mkdir &lt;env_name&gt;
+</code></pre>
+</li>
+<li>
+<p>Clone this repo into your machine by:</p>
+
+<pre><code>    git clone https://github.com/Rahul91/Django_IPL.git
+</code></pre>
+</li>
+<li>
+<p>Install the dependencies using requirements.txt by:</p>
+
+<pre><code>    pip install requirements.txt
+</code></pre>
+</li>
+<li>
+<p>Thats, all, now you this website is up and runnig on your localhost. Just do:</p>
+
+<pre><code>    python manage.py runserver
+</code></pre>
+</li>
+</ol>
+
+<h1>
+<a id="bugs" class="anchor" href="#bugs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bugs</h1>
+
+<p>In case of find any bug, feel free to clone it, replicate in your system, fix it and push to masters, or you drop a mail to <a href="mailto:priyrahulmishra@gmail.com">priyrahulmishra@gmail.com</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Rahul91/Django_IPL">Django_IPL</a> is maintained by <a href="https://github.com/Rahul91">Rahul91</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
