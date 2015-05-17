@@ -83,9 +83,7 @@ var xmlhttp;
                     alert("This browser does not support desktop notification");
                   }
 
-                  // Let's check whether notification permissions have alredy been granted
                   else if ((Notification.permission === "granted")) {
-                    // If it's okay let's create a notification
                     if(status=="Innings Break")
                     {
                     var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ") : "+status);
@@ -101,7 +99,6 @@ var xmlhttp;
                     
                   }
 
-                  // Otherwise, we need to ask the user for permission
                   else if (Notification.permission !== 'denied') {
                     Notification.requestPermission(function (permission) {
                       // If the user accepts, let's create a notification
@@ -112,17 +109,22 @@ var xmlhttp;
                   }
 
                  x=0;
-  
               //location.reload();
           ///////////////////////////////////////////////////////////////////////
-              }            
+              }         
+            }
+
+            else
+            {
+              var notification = new Notification("No IPL Match is Live right now!!!");  
             }
         }
        }
        
        else
        {
-        alert("no");
+        //alert("no");
+        var notification = new Notification("No Match is Live right now!!!");
        }
     }
 
@@ -135,7 +137,7 @@ var xmlhttp;
  }
 </script>
 
-<body onload="JavaScript:notifyMe(120000);">
+<body onload="JavaScript:notifyMe(1500000);">
 
 <div style="float: right;">
 <a href="/accounts/logout/"><button style="border-radius: 28px;
