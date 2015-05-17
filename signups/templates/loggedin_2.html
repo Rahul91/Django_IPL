@@ -49,7 +49,7 @@ var xmlhttp;
           var run=xmldoc.getElementsByTagName("r").item(0).firstChild.data;
 
           var status=xmldoc.getElementsByTagName("ms").item(0).firstChild.data;
-          var target=xmldoc.getElementsByTagName("tg").item(0).firstChild.data;
+          
           var ing=xmldoc.getElementsByTagName("i").item(2).firstChild.data;
           //alert(ing + target);
           
@@ -88,10 +88,25 @@ var xmlhttp;
                     {
                     var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ") : "+status);
                     }
-                    else if (ing==2)
+                    else if (ing==2 && status!="Match Ended")
                     {
+                      var target=xmldoc.getElementsByTagName("ms").item(0).firstChild.data;
                      var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ") | Target:"+target); 
                     }
+                    else if (status=="Match Ended")
+                    {
+                      var winner=xmldoc.getElementsByTagName("winner").item(0).firstChild.data;
+                       if (winner==team1_id)
+                        {
+                        var winner_team=team1;
+                        }
+                      else
+                        {
+                        var winner_team=team2;
+                        }
+                     var notification = new Notification(team1+" v/s "+team2+"  :  "+ status+" : "+winner_team+" won!!!"); 
+                    }
+
                     else
                     {
                       var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ")");
@@ -137,7 +152,7 @@ var xmlhttp;
  }
 </script>
 
-<body onload="JavaScript:notifyMe(1500000);">
+<body onload="JavaScript:notifyMe(120000);">
 
 <div style="float: right;">
 <a href="/accounts/logout/"><button style="border-radius: 28px;
