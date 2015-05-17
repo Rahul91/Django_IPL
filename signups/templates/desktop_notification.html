@@ -1,0 +1,107 @@
+<html>  
+  <head><title>Live IPL Score</title> </head>
+<script type="text/javascript">
+
+
+function notifyMe(t) {
+  // Let's check if the browser supports notifications
+
+
+var xmlhttp;
+
+  if (window.XMLHttpRequest)
+    {
+      xmlhttp=new XMLHttpRequest();
+    }
+  else
+    {// code for IE6, IE5
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+
+  xmlhttp.onreadystatechange=function()
+    {
+      if (xmlhttp.readyState==4 || 1)
+      { 
+        if (xmlhttp.status==200)
+        {
+          //var response="aaya re";
+          //alert("vjvj");
+          var xmldoc=xmlhttp.responseXML;
+
+          var series_name=xmldoc.getElementsByTagName("series_name").item(0).firstChild.data;
+          var series_id=xmldoc.getElementsByTagName("series_id").item(0).firstChild.data;
+          var match_no=xmldoc.getElementsByTagName("mn").item(0).firstChild.data;
+          var stadium=xmldoc.getElementsByTagName("stadium").item(0).firstChild.data;
+
+
+          var wicket=xmldoc.getElementsByTagName("w").item(0).firstChild.data;
+          var run=xmldoc.getElementsByTagName("r").item(0).firstChild.data;
+
+          //alert(series_name);
+
+          var x=wicket;
+          //alert(x + wicket);
+          ///////////////////////////////////////
+          //var y=[];
+          //y.push(x);
+          //alert(y.length);
+          /////////////////////////////////////// 
+
+          if (series_id==12208)
+          {
+
+            //if (x==1 || x==2 || x==3 || x==4 || x==5 || x==6 || x==7 || x==8 || x==9)
+            if (run>=2)
+            {
+          /////////////////////////////////////////////////////////////////////
+
+                if (!("Notification" in window)) {
+                    alert("This browser does not support desktop notification");
+                  }
+
+                  // Let's check whether notification permissions have alredy been granted
+                  else if ((Notification.permission === "granted")) {
+                    // If it's okay let's create a notification
+                    z=1;
+                    var notification = new Notification(series_name+"\n"+" Score: "+" "+run+"/"+wicket);
+                    
+                  }
+
+                  // Otherwise, we need to ask the user for permission
+                  else if (Notification.permission !== 'denied') {
+                    Notification.requestPermission(function (permission) {
+                      // If the user accepts, let's create a notification
+                      if (permission === "granted") {
+                        var notification = new Notification("Out!!!");
+                      }
+                    });
+                  }
+
+                 x=0;
+  
+              //location.reload();
+          ///////////////////////////////////////////////////////////////////////
+              }            
+            }
+        }
+       }
+       
+       else
+       {
+        alert("no");
+       }
+    }
+
+    xmlhttp.open("GET","https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20cricket.scorecard.live.summary&diagnostics=true&env=store%3A%2F%2F0TxIGQMQbObzvU4Apia0V0",true);
+    
+    xmlhttp.send();
+
+    setTimeout("location.reload(true);", t);
+
+ }
+</script>
+<body onload="JavaScript:notifyMe(120000);">
+<button>Click me</button>
+</body>
+</html>

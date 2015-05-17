@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html id="yui_3_11_0_4_1431611626138_140" class="yui3-js-enabled secure" lang="en_US"><div class="" id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important"></div><head>
+        <title>YQL Console: select * from cricket.scorecard.live.summary</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Explore the YQL platform directly in your browser. Learn how to use the built-in and community-provided tables for quickly accessing data from across the internet.">
+        <script type="text/javascript" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_010.js"></script> <link rel="stylesheet" type="text/css" href="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_004.css">
+
+<script>if (!window.YAHOO) { window.YAHOO = {}; } if (!YAHOO.Media) { YAHOO.Media = {}; } if (!YAHOO.widget) { YAHOO.widget = {}; }</script>
+<script>if (!window.YMedia) { var YMedia = YUI(); YMedia.includes = []; YMedia.module_includes = []; }</script><link rel="stylesheet" href="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_003.css">        <style>
+            #perfView {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            #perf-container {
+                position: absolute;
+                overflow-y: auto;
+                overflow-x: hidden;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 5em;
+            }
+            #perf-chart {
+                margin-top: 1em;
+            }
+        </style>
+    <script async="" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_007.js" id="yui_3_11_0_1_1431611626138_2" charset="utf-8"></script><script async="" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_012.js" id="yui_3_11_0_2_1431611626138_2" charset="utf-8"></script><script async="" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_004.js" id="yui_3_11_0_2_1431611626138_3" charset="utf-8"></script><link href="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_002.css" id="yui_3_11_0_3_1431611626138_2" rel="stylesheet" charset="utf-8"><script async="" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_005.js" id="yui_3_11_0_3_1431611626138_3" charset="utf-8"></script><script async="" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_003.js" id="yui_3_11_0_3_1431611626138_4" charset="utf-8"></script><script async="" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo.js" id="yui_3_11_0_3_1431611626138_5" charset="utf-8"></script><script async="" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_008.js" id="yui_3_11_0_3_1431611626138_6" charset="utf-8"></script><link href="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_005.css" id="yui_3_11_0_3_1431611626138_7" rel="stylesheet" charset="utf-8"><script async="" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_006.js" id="yui_3_11_0_3_1431611626138_8" charset="utf-8"></script><link href="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo.css" id="yui_3_11_0_4_1431611626138_2" rel="stylesheet" charset="utf-8"><script async="" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_002.js" id="yui_3_11_0_4_1431611626138_3" charset="utf-8"></script><script src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/yql.js" id="yui_3_11_0_4_1431611626138_8" charset="utf-8"></script></head>
+        <body id="container" class="yui3-skin-sam yui-layout" style="visibility: visible;"><div style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; display: none;" class="yui3-widget-mask" hidden="true"></div><span class="yui-resize-status"></span><span class="yui-resize-status"></span><div class="yui-layout-doc" style="height: 678px; width: 1288px;" id="layout-doc"><div class="yui-layout-unit yui-layout-unit-top yui-layout-noscroll" style="height: 85px; position: absolute; width: 1288px;" id="yui-gen3000001"><div style="height: 85px; width: 1288px; top: 0px; left: 0px;" id="yui-gen3000002" class="yui-layout-wrap"><div style="height: 85px; width: 1288px; top: 0px;" class="yui-layout-bd yui-layout-bd-nohd yui-layout-bd-noft">topNav</div></div></div><div class="yui-layout-noscroll yui-layout-unit yui-layout-unit-right yui-resize" style="width: 260px; position: absolute; top: 85px; left: 1028px; height: 553px;" id="yui-gen3000003"><div style="height: 553px; width: 232px; top: 0px; left: 10px;" id="yui-gen3000004" class="yui-layout-wrap"><div style="width: 232px;" class="yui-layout-hd"><h2>&nbsp;</h2><div class="collapse" title="Click to collapse this pane."></div></div><div style="height: 553px; width: 232px; top: 0px;" class="yui-layout-bd yui-layout-bd-noft"><div id="topRightView">
+    <div id="userDataAccordion" class="accordion">
+        <div class="accordion-group">
+            <div class="accordion-heading collapsed">
+                <i class="icon-caret-right"></i>
+                <a id="queryAliasesLink" class="accordion-toggle" data-toggle="collapse" href="#queryAliases">Query Aliases <span id="aliasname"></span></a>
+            </div>
+            <div id="queryAliases" class="accordion-body collapse">
+                <div id="queryAliasesInner" class="accordion-inner parent-inner">
+                    <ul id="queryAliasesList" class="unstyled">
+                        <li id="qmy" style="display: none;">Updating...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group" style="background-color: #F4F4F4;">
+            <div class="accordion-heading collapsed">
+                <i class="icon-caret-right"></i>
+                <a id="myYQLLink" class="accordion-toggle" data-toggle="collapse" href="#myYQL">My YQL</a>
+                <span id="MTable" style="margin: .5em 1em 0 0; display: none;">
+                    <i id="tableRefreshIcon" class="icon-refresh" style="margin-right: .1em;"></i>
+                    <a class="action" href="https://developer.yahoo.com/yql/editor/" target="_blank">New</a>
+                </span>
+            </div>
+            <div id="myYQL" class="accordion-body collapse">
+                <div id="myYQLList" class="accordion-inner parent-inner">
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group" style="background-color: #F4F4F4;">
+            <div class="accordion-heading collapsed">
+                <i class="icon-caret-right"></i>
+                <a id="recentQueriesLink" class="accordion-toggle" data-toggle="collapse" href="#recentQueries">Recent Queries</a>
+                <span id="clearQueriesHolder" style="margin: .5em 1em 0 0; display: none;"><a id="clearQueriesLink" class="action" href="#">Clear</a></span>
+            </div>
+            <div id="recentQueries" class="accordion-body collapse">
+                <div class="accordion-inner parent-inner">
+                    <ul id="qhistory" class="unstyled"><li><a title="select * from cricket.scorecard.live.summary" href="#">select * from cricket.scorecard.live.summary</a></li><li><a title="select past_ings.s.a.r from cricket.scorecard.live.summary" href="#">select past_ings.s.a.r from cricket.scorecard.live.summary</a></li><li><a title="select past_ings.s.a from cricket.scorecard.live.summary" href="#">select past_ings.s.a from cricket.scorecard.live.summary</a></li><li><a title="select past_ings.s.a.r from cricket.scorecard.live.summary" href="#">select past_ings.s.a.r from cricket.scorecard.live.summary</a></li><li><a title="select * from cricket.scorecard.live.summary" href="#">select * from cricket.scorecard.live.summary</a></li><li><a title="select * from cricket.scorecard where match_id=11985" href="#">select * from cricket.scorecard where match_id=11985</a></li><li><a title="desc cricket.scorecard" href="#">desc cricket.scorecard</a></li><li><a title="select * from cricket.scorecard" href="#">select * from cricket.scorecard</a></li><li><a title="select * from cricket.scorecard.live" href="#">select * from cricket.scorecard.live</a></li><li><a title="desc cricket.scorecard.live" href="#">desc cricket.scorecard.live</a></li><li><a href="#" title="select * from cricket.scorecard.live.summary">select * from cricket.scorecard.live.summary</a></li><li><a href="#" title="desc cricket.scorecard.live">desc cricket.scorecard.live</a></li><li><a href="#" title="select past_ings.s.a from cricket.scorecard.live">select past_ings.s.a from cricket.scorecard.live</a></li><li><a href="#" title="select past_ings.s.a.r from cricket.scorecard.live">select past_ings.s.a.r from cricket.scorecard.live</a></li><li><a href="#" title="select past_ings.s.a from cricket.scorecard.live">select past_ings.s.a from cricket.scorecard.live</a></li><li><a href="#" title="select past_ings from cricket.scorecard.live">select past_ings from cricket.scorecard.live</a></li><li><a href="#" title="select a from cricket.scorecard.live">select a from cricket.scorecard.live</a></li><li><a href="#" title="select past_ings from cricket.scorecard.live">select past_ings from cricket.scorecard.live</a></li><li><a href="#" title="select past_ings.r from cricket.scorecard.live">select past_ings.r from cricket.scorecard.live</a></li><li><a href="#" title="select past_ings from cricket.scorecard.live">select past_ings from cricket.scorecard.live</a></li><li><a href="#" title="select * from cricket.scorecard.live">select * from cricket.scorecard.live</a></li><li><a href="#" title="select Scorecard from cricket.scorecard.live">select Scorecard from cricket.scorecard.live</a></li><li><a href="#" title="select * from cricket.scorecard.live">select * from cricket.scorecard.live</a></li><li><a href="#" title="select r from cricket.scorecard.live">select r from cricket.scorecard.live</a></li><li><a href="#" title="select * from cricket.scorecard.live">select * from cricket.scorecard.live</a></li><li><a href="#" title="select * from cricket.scorecard where match_id=11985">select * from cricket.scorecard where match_id=11985</a></li><li><a href="#" title="select * from cricket.scorecard.live">select * from cricket.scorecard.live</a></li><li><a href="#" title="desc cricket.scorecard.live">desc cricket.scorecard.live</a></li><li><a href="#" title="desc cricket.scorecard">desc cricket.scorecard</a></li><li><a href="#" title="select * from cricket.scorecard where url=&quot;https://cricket.yahoo.com/cricket/live-score/&quot;">select * from cricket.scorecard where url="https://cricket.yahoo.com/cricket/live-score/"</a></li><li><a href="#" title="select * from cricket.scorecard.live where url=&quot;https://cricket.yahoo.com/cricket/live-score/&quot;">select * from cricket.scorecard.live where url="https://cricket.yahoo.com/cricket/live-score/"</a></li><li><a href="#" title="select title from rss where url=&quot;http://rss.news.yahoo.com/rss/topstories&quot;">select title from rss where url="http://rss.news.yahoo.com/rss/topstories"</a></li><li><a href="#" title="select title from rss ">select title from rss </a></li><li><a href="#" title="select * from cricket.scorecard.live">select * from cricket.scorecard.live</a></li><li><a href="#" title="select * from cricket.scorecard.live where url=&quot;http://cricketwebservice/ws/cwsapi/live/livematches&quot;">select * from cricket.scorecard.live where url="http://cricketwebservice/ws/cwsapi/live/livematches"</a></li><li><a href="#" title="select * from cricket.scorecard.live where url=&quot;http://cricketwebservice/ws/cwsapi/live/livematches.php?output=full&quot;">select * from cricket.scorecard.live where url="http://cricketwebservice/ws/cwsapi/live/livematches.php?output=full"</a></li><li><a href="#" title="select * from rss where url=&quot;http://cricketwebservice/ws/cwsapi/live/livematches.php?output=full&quot;">select * from rss where url="http://cricketwebservice/ws/cwsapi/live/livematches.php?output=full"</a></li><li><a href="#" title="select * from cricket.scorecard.live">select * from cricket.scorecard.live</a></li><li><a href="#" title="desc cricket.scorecard.live">desc cricket.scorecard.live</a></li><li><a href="#" title="select cricket.scorecard.live from TABLE where url=&quot;https://cricket.yahoo.com/cricket/live-score/&quot;">select cricket.scorecard.live from TABLE where url="https://cricket.yahoo.com/cricket/live-score/"</a></li><li><a href="#" title="select cricket.scorecard.live from TABLE.yql-query-yahooapis-com.v1.production.manhattan.gq1.yahoo.com.cricket.scorecard.live.899f4f077f99fa7c1fdde1debb6c8cd6 where url=&quot;https://cricket.yahoo.com/cricket/live-score/&quot;">select
+ cricket.scorecard.live from 
+TABLE.yql-query-yahooapis-com.v1.production.manhattan.gq1.yahoo.com.cricket.scorecard.live.899f4f077f99fa7c1fdde1debb6c8cd6
+ where url="https://cricket.yahoo.com/cricket/live-score/"</a></li><li><a href="#" title="desc cricket.scorecard.live">desc cricket.scorecard.live</a></li><li><a href="#" title="select cricket.scorecard.live from rss where url=&quot;https://cricket.yahoo.com/cricket/live-score/&quot;">select cricket.scorecard.live from rss where url="https://cricket.yahoo.com/cricket/live-score/"</a></li><li><a href="#" title="select cricket.scorecard.live where url=&quot;https://cricket.yahoo.com/cricket/live-score/&quot;">select cricket.scorecard.live where url="https://cricket.yahoo.com/cricket/live-score/"</a></li><li><a href="#" title="select title from rss where url=&quot;http://rss.news.yahoo.com/rss/topstories&quot;">select title from rss where url="http://rss.news.yahoo.com/rss/topstories"</a></li><li><a href="#" title="desc cricket.scorecard.live">desc cricket.scorecard.live</a></li><li><a href="#" title="SELECT * FROM cricket.scorecard.live">SELECT * FROM cricket.scorecard.live</a></li><li><a href="#" title="SELECT * FROM cricket.scorecard.live WHERE appid=&quot;&quot;">SELECT * FROM cricket.scorecard.live WHERE appid=""</a></li><li><a href="#" title="desc cricket.scorecard.live">desc cricket.scorecard.live</a></li><li><a href="#" title="show tables">show tables</a></li></ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <i class="icon-caret-down"></i>
+                <a id="exampleQueriesLink" class="accordion-toggle" data-toggle="collapse" href="#exampleQueries">Example Queries</a>
+            </div>
+            <div id="exampleQueries" class="accordion-body collapse in" style="height: 170px;">
+                <div class="accordion-inner parent-inner">
+                    <ul class="unstyled"><li>
+    <a data-rapid_p="1" href="#" class="rapidnofollow" title="select * from social.relationships where owner_guid=me">Get my social graph</a>
+</li>
+<li>
+    <a data-rapid_p="2" href="#" class="rapidnofollow" title="select urls.url from flickr.photos.info where photo_id=2439864402 and api_key=&quot;your key here&quot;">Get the flickr image url by photo ID</a>
+</li>
+<li>
+    <a data-rapid_p="3" href="#" class="rapidnofollow" title="select * from geo.places where text=&quot;san francisco, ca&quot;">Get san francisco geo data</a>
+</li>
+<li>
+    <a data-rapid_p="4" href="#" class="rapidnofollow" title="select woeid from geo.places where text=&quot;san francisco, ca&quot;">Get san francisco woeid</a>
+</li>
+<li>
+    <a data-rapid_p="5" href="#" class="rapidnofollow" title="select * from geo.places.parent where child_woeid in (select woeid from geo.places where text=&quot;san francisco, ca&quot;)">Get geo details about San Francisco</a>
+</li>
+<li>
+    <a data-rapid_p="6" href="#" class="rapidnofollow" title="select * from local.search where query=&quot;sushi&quot; and location=&quot;san francisco, ca&quot;">Find sushi in San Francisco</a>
+</li>
+<li>
+    <a data-rapid_p="7" href="#" class="rapidnofollow" title="select * from local.search where query=&quot;sushi&quot; and location=&quot;san francisco, ca&quot; and Rating.AverageRating=4">Find sushi restaurants in San Francisco with an average rating of 4</a>
+</li>
+<li>
+    <a data-rapid_p="8" href="#" class="rapidnofollow" title="select title from rss where url=&quot;http://rss.news.yahoo.com/rss/topstories&quot;">Get RSS feed from Yahoo! News top stories</a>
+</li>
+<li>
+    <a data-rapid_p="9" href="#" class="rapidnofollow" title="select * from html where url='http://finance.yahoo.com/q?s=yhoo' and xpath='//div[@id=&quot;yfi_headlines&quot;]/div[2]/ul/li/a'">Extract the headlines from yahoo finance using xpath</a>
+</li>
+<li>
+    <a data-rapid_p="10" href="#" class="rapidnofollow" title="select * from rss where url in (select title from atom where url=&quot;http://spreadsheets.google.com/feeds/list/pg_T0Mv3iBwIJoc82J1G8aQ/od6/public/basic&quot;)">Aggregate and filter multiple rss feeds</a>
+</li>
+<li>
+    <a data-rapid_p="11" href="#" class="rapidnofollow" title="select * from social.profile where guid=me">Get my profile data</a>
+</li>
+<li>
+    <a data-rapid_p="12" href="#" class="rapidnofollow" title="select * from social.connections where owner_guid=me">Get my friends</a>
+</li>
+<li>
+    <a data-rapid_p="13" href="#" class="rapidnofollow" title="select * from social.profile where guid in (select guid from social.connections where owner_guid=me)">Get all my friend profiles</a>
+</li>
+<li>
+    <a data-rapid_p="14" href="#" class="rapidnofollow" title="select nickname from social.profile where guid in (select guid from social.connections where owner_guid=me)">Get my friends nicknames</a>
+</li>
+<li>
+    <a data-rapid_p="15" href="#" class="rapidnofollow" title="select * from social.profile where guid in (select guid from social.connections where owner_guid=me) | tail(count=1)">Get my last added friend</a>
+</li>
+<li>
+    <a data-rapid_p="16" href="#" class="rapidnofollow" title="select * from social.profile where guid in (select guid from social.connections where owner_guid=me) | sort(field=&quot;nickname&quot;)">Get my friends sorted by nickname</a>
+</li>
+<li>
+    <a data-rapid_p="17" href="#" class="rapidnofollow" title="select * from flickr.photos.search where text=&quot;Cat&quot; limit 10 and api_key=&quot;your key here&quot;">Get 10 flickr "cat" photos</a>
+</li>
+<li>
+    <a data-rapid_p="18" href="#" class="rapidnofollow" title="select * from flickr.photos.info where photo_id=2439864402 and api_key=&quot;your key here&quot;">Get a flickr photo by photo ID</a>
+</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div></div><div class="yui-resize-handle yui-resize-handle-l" id="yui-gen3000005"><div class="yui-layout-resize-knob"></div></div></div><div style="height: 0px; width: 260px;" class="yui-resize-proxy"><div class="yui-layout-handle-l"></div></div><div class="yui-layout-noscroll yui-layout-unit yui-layout-unit-left" style="width: 260px; position: absolute; top: 85px; height: 553px; left: 0px;" id="yui-gen3000006"><div style="height: 553px; width: 241px; top: 0px; left: 12px;" id="yui-gen3000007" class="yui-layout-wrap"><div style="width: 241px;" class="yui-layout-hd"><h2>&nbsp;</h2><div class="collapse" title="Click to collapse this pane."></div></div><div style="height: 553px; width: 241px; top: 0px;" class="yui-layout-bd yui-layout-bd-noft"><div id="leftView">
+    <i id="dtExpand" class="icon-chevron-right chevron expander" data-expand="true" data-column="#dtColumn" style="margin-top: .75em; display: none;"></i>
+    <div id="dtColumnInner" class="row-fluid column-inner">
+        <h4 style="margin-bottom: .58em;">
+            <span>DATATABLES</span>
+            <span id="count" style="font:normal 0.9em arial;color:#666;">(124)</span>
+        </h4>
+        <label id="showCommunityTables" class="checkbox" style="display: inline-block; float: left;">
+            <input data-rapid_p="1" id="showCommunityTablesCheckbox" type="checkbox">Show Community Tables
+        </label>
+        <a data-rapid_p="2" id="dtQuestion" href="http://www.datatables.org/" target="_blank"><i class="icon-question-sign"></i></a>
+        <div style="margin-top: .6em; position: relative; clear: left;">
+            <i class="icon-search" style="position: absolute;"></i>
+            <i id="searchRemove" class="icon-remove" style="position: absolute;"></i>
+            <input data-rapid_p="3" id="searchTableInput" class="span12" placeholder="Search Tables" type="text">
+        </div>
+        <div style="background-color: rgb(250, 250, 250);" id="dtAccordion" class="accordion shadow">
+            <div id="dtDefaultContainer">
+<div id="yui_3_11_0_3_1431611626138_337" class="accordion-group">
+    <div id="yui_3_11_0_3_1431611626138_330" class="accordion-heading">
+        <i class="icon-caret-down"></i>
+        <a data-rapid_p="4" id="focus" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#cricket">cricket</a>
+    </div>
+    <div style="height: 369px;" id="cricket" class="accordion-body collapse in">
+        <div id="yui_3_11_0_3_1431611626138_336" class="accordion-inner">
+            <ul id="yui_3_11_0_3_1431611626138_339" class="unstyled">
+                
+                    <li id="yui_3_11_0_3_1431611626138_387" class="datatableNode cricket"><a id="yui_3_11_0_3_1431611626138_386" data-rapid_p="5" class="table rapidnofollow community" href="#" title="cricket.commentary">cricket.commentary</a> 
+                        <span id="yui_3_11_0_3_1431611626138_645" class="meta" style="display: none;">
+                            <a id="yui_3_11_0_3_1431611626138_644" data-rapid_p="6" class="desc label rapidnofollow" data-name="cricket.commentary" data-ylk="slk:describe cricket.commentary;">desc</a>
+                            <span class="label"><a data-rapid_p="7" class="src rapidnofollow" data-ylk="slk:source cricket.commentary" target="_blank" href="store://IxGADPVwF6CJh085t92RN3">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_393" class="datatableNode cricket"><a id="yui_3_11_0_3_1431611626138_392" data-rapid_p="8" class="table rapidnofollow community" href="#" title="cricket.news">cricket.news</a> 
+                        <span id="yui_3_11_0_3_1431611626138_611" class="meta" style="display: none;">
+                            <a id="yui_3_11_0_3_1431611626138_610" data-rapid_p="9" class="desc label rapidnofollow" data-name="cricket.news" data-ylk="slk:describe cricket.news;">desc</a>
+                            <span class="label"><a data-rapid_p="10" class="src rapidnofollow" data-ylk="slk:source cricket.news" target="_blank" href="store://vmSppsGsmzyzaHP0D0k0R1">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_338" class="datatableNode cricket"><a data-rapid_p="11" class="table rapidnofollow community" href="#" title="cricket.news.item">cricket.news.item</a> 
+                        <span id="yui_3_11_0_3_1431611626138_397" class="meta" style="display: none;">
+                            <a id="yui_3_11_0_3_1431611626138_396" data-rapid_p="12" class="desc label rapidnofollow" data-name="cricket.news.item" data-ylk="slk:describe cricket.news.item;">desc</a>
+                            <span class="label"><a data-rapid_p="13" class="src rapidnofollow" data-ylk="slk:source cricket.news.item" target="_blank" href="store://KT9ew1noIQMzXFLwlUGkx6">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_344" class="datatableNode cricket"><a data-rapid_p="14" class="table rapidnofollow community" href="#" title="cricket.past_matches">cricket.past_matches</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="15" class="desc label rapidnofollow" data-name="cricket.past_matches" data-ylk="slk:describe cricket.past_matches;">desc</a>
+                            <span class="label"><a data-rapid_p="16" class="src rapidnofollow" data-ylk="slk:source cricket.past_matches" target="_blank" href="store://dc16TeIam2h0MNWaqVxWoD">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_347" class="datatableNode cricket"><a data-rapid_p="17" class="table rapidnofollow community" href="#" title="cricket.photos">cricket.photos</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="18" class="desc label rapidnofollow" data-name="cricket.photos" data-ylk="slk:describe cricket.photos;">desc</a>
+                            <span class="label"><a data-rapid_p="19" class="src rapidnofollow" data-ylk="slk:source cricket.photos" target="_blank" href="store://h5x57wHfD1ex3Qwu4PaET5">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_351" class="datatableNode cricket"><a id="yui_3_11_0_3_1431611626138_350" data-rapid_p="20" class="table rapidnofollow community" href="#" title="cricket.player.profile">cricket.player.profile</a> 
+                        <span id="yui_3_11_0_3_1431611626138_360" class="meta" style="display: none;">
+                            <a id="yui_3_11_0_3_1431611626138_359" data-rapid_p="21" class="desc label rapidnofollow" data-name="cricket.player.profile" data-ylk="slk:describe cricket.player.profile;">desc</a>
+                            <span class="label"><a data-rapid_p="22" class="src rapidnofollow" data-ylk="slk:source cricket.player.profile" target="_blank" href="store://1N6twmwCjUlCEFo24x90hh">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_356" class="datatableNode cricket"><a id="yui_3_11_0_3_1431611626138_355" data-rapid_p="23" class="table rapidnofollow community" href="#" title="cricket.players">cricket.players</a> 
+                        <span id="yui_3_11_0_3_1431611626138_400" class="meta" style="display: none;">
+                            <a data-rapid_p="24" class="desc label rapidnofollow" data-name="cricket.players" data-ylk="slk:describe cricket.players;">desc</a>
+                            <span id="yui_3_11_0_3_1431611626138_399" class="label"><a id="yui_3_11_0_3_1431611626138_401" data-rapid_p="25" class="src rapidnofollow" data-ylk="slk:source cricket.players" target="_blank" href="store://VjX8WD8kcHMQ0YfoKRlqKn">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_603" class="datatableNode cricket"><a data-rapid_p="26" class="table rapidnofollow community" href="#" title="cricket.scorecard">cricket.scorecard</a> 
+                        <span id="yui_3_11_0_3_1431611626138_607" class="meta" style="display: none;">
+                            <a id="yui_3_11_0_3_1431611626138_606" data-rapid_p="27" class="desc label rapidnofollow" data-name="cricket.scorecard" data-ylk="slk:describe cricket.scorecard;">desc</a>
+                            <span class="label"><a data-rapid_p="28" class="src rapidnofollow" data-ylk="slk:source cricket.scorecard" target="_blank" href="store://l1s0EPaKbKUbyEPA8lFYb2">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_430" class="datatableNode cricket"><a id="yui_3_11_0_3_1431611626138_642" data-rapid_p="29" class="table rapidnofollow community" href="#" title="cricket.scorecard.live">cricket.scorecard.live</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="30" class="desc label rapidnofollow" data-name="cricket.scorecard.live" data-ylk="slk:describe cricket.scorecard.live;">desc</a>
+                            <span class="label"><a data-rapid_p="31" class="src rapidnofollow" data-ylk="slk:source cricket.scorecard.live" target="_blank" href="store://xXpw31OZ4fTU4hQs4IPmAV">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_435" class="datatableNode cricket"><a id="yui_3_11_0_3_1431611626138_434" data-rapid_p="32" class="table rapidnofollow community" href="#" title="cricket.scorecard.live.summary">cricket.scorecard.live.summary</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="33" class="desc label rapidnofollow" data-name="cricket.scorecard.live.summary" data-ylk="slk:describe cricket.scorecard.live.summary;">desc</a>
+                            <span class="label"><a data-rapid_p="34" class="src rapidnofollow" data-ylk="slk:source cricket.scorecard.live.summary" target="_blank" href="store://3vynIg3fvfgqWvJcDWyob0">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_439" class="datatableNode cricket"><a data-rapid_p="35" class="table rapidnofollow community" href="#" title="cricket.scorecard.summary">cricket.scorecard.summary</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="36" class="desc label rapidnofollow" data-name="cricket.scorecard.summary" data-ylk="slk:describe cricket.scorecard.summary;">desc</a>
+                            <span class="label"><a data-rapid_p="37" class="src rapidnofollow" data-ylk="slk:source cricket.scorecard.summary" target="_blank" href="store://5MCWdxqQOXMNFvFvQpJTQM">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_442" class="datatableNode cricket"><a id="yui_3_11_0_3_1431611626138_455" data-rapid_p="38" class="table rapidnofollow community" href="#" title="cricket.series.ongoing">cricket.series.ongoing</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="39" class="desc label rapidnofollow" data-name="cricket.series.ongoing" data-ylk="slk:describe cricket.series.ongoing;">desc</a>
+                            <span class="label"><a data-rapid_p="40" class="src rapidnofollow" data-ylk="slk:source cricket.series.ongoing" target="_blank" href="store://kK3nf7S53KGgfOgkQ633cB">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_446" class="datatableNode cricket"><a id="yui_3_11_0_3_1431611626138_445" data-rapid_p="41" class="table rapidnofollow community" href="#" title="cricket.series.past">cricket.series.past</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="42" class="desc label rapidnofollow" data-name="cricket.series.past" data-ylk="slk:describe cricket.series.past;">desc</a>
+                            <span class="label"><a data-rapid_p="43" class="src rapidnofollow" data-ylk="slk:source cricket.series.past" target="_blank" href="store://kfg38hX7PtV2UV89QAWQmf">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li id="yui_3_11_0_3_1431611626138_451" class="datatableNode cricket"><a id="yui_3_11_0_3_1431611626138_450" data-rapid_p="44" class="table rapidnofollow community" href="#" title="cricket.series.upcoming">cricket.series.upcoming</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="45" class="desc label rapidnofollow" data-name="cricket.series.upcoming" data-ylk="slk:describe cricket.series.upcoming;">desc</a>
+                            <span class="label"><a data-rapid_p="46" class="src rapidnofollow" data-ylk="slk:source cricket.series.upcoming" target="_blank" href="store://9N1S5NEdfJFMvLJBDJP01N">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode cricket"><a data-rapid_p="47" class="table rapidnofollow community" href="#" title="cricket.team.profile">cricket.team.profile</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="48" class="desc label rapidnofollow" data-name="cricket.team.profile" data-ylk="slk:describe cricket.team.profile;">desc</a>
+                            <span class="label"><a data-rapid_p="49" class="src rapidnofollow" data-ylk="slk:source cricket.team.profile" target="_blank" href="store://naXI4cWBGJlU8gzoyrTajQ">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode cricket"><a data-rapid_p="50" class="table rapidnofollow community" href="#" title="cricket.teams">cricket.teams</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="51" class="desc label rapidnofollow" data-name="cricket.teams" data-ylk="slk:describe cricket.teams;">desc</a>
+                            <span class="label"><a data-rapid_p="52" class="src rapidnofollow" data-ylk="slk:source cricket.teams" target="_blank" href="store://gPeXezE09iMcke9Y40ueqU">src</a></span>
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode cricket"><a data-rapid_p="53" class="table rapidnofollow community" href="#" title="cricket.upcoming_matches">cricket.upcoming_matches</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="54" class="desc label rapidnofollow" data-name="cricket.upcoming_matches" data-ylk="slk:describe cricket.upcoming_matches;">desc</a>
+                            <span class="label"><a data-rapid_p="55" class="src rapidnofollow" data-ylk="slk:source cricket.upcoming_matches" target="_blank" href="store://HpFd40jgIuzAf4VrtOOToe">src</a></span>
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="56" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#appdb">appdb</a>
+    </div>
+    <div id="appdb" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode appdb"><a data-rapid_p="57" class="table rapidnofollow " href="#" title="appdb.application">appdb.application</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="58" class="desc label rapidnofollow" data-name="appdb.application" data-ylk="slk:describe appdb.application;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode appdb"><a data-rapid_p="59" class="table rapidnofollow " href="#" title="appdb.categories">appdb.categories</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="60" class="desc label rapidnofollow" data-name="appdb.categories" data-ylk="slk:describe appdb.categories;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="61" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#contentanalysis">contentanalysis</a>
+    </div>
+    <div id="contentanalysis" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode contentanalysis"><a data-rapid_p="62" class="table rapidnofollow " href="#" title="contentanalysis.analyze">contentanalysis.analyze</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="63" class="desc label rapidnofollow" data-name="contentanalysis.analyze" data-ylk="slk:describe contentanalysis.analyze;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="64" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#fantasysports">fantasysports</a>
+    </div>
+    <div id="fantasysports" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="65" class="table rapidnofollow " href="#" title="fantasysports.draftresults">fantasysports.draftresults</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="66" class="desc label rapidnofollow" data-name="fantasysports.draftresults" data-ylk="slk:describe fantasysports.draftresults;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="67" class="table rapidnofollow " href="#" title="fantasysports.games">fantasysports.games</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="68" class="desc label rapidnofollow" data-name="fantasysports.games" data-ylk="slk:describe fantasysports.games;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="69" class="table rapidnofollow " href="#" title="fantasysports.leagues">fantasysports.leagues</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="70" class="desc label rapidnofollow" data-name="fantasysports.leagues" data-ylk="slk:describe fantasysports.leagues;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="71" class="table rapidnofollow " href="#" title="fantasysports.leagues.scoreboard">fantasysports.leagues.scoreboard</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="72" class="desc label rapidnofollow" data-name="fantasysports.leagues.scoreboard" data-ylk="slk:describe fantasysports.leagues.scoreboard;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="73" class="table rapidnofollow " href="#" title="fantasysports.leagues.settings">fantasysports.leagues.settings</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="74" class="desc label rapidnofollow" data-name="fantasysports.leagues.settings" data-ylk="slk:describe fantasysports.leagues.settings;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="75" class="table rapidnofollow " href="#" title="fantasysports.leagues.standings">fantasysports.leagues.standings</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="76" class="desc label rapidnofollow" data-name="fantasysports.leagues.standings" data-ylk="slk:describe fantasysports.leagues.standings;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="77" class="table rapidnofollow " href="#" title="fantasysports.leagues.transactions">fantasysports.leagues.transactions</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="78" class="desc label rapidnofollow" data-name="fantasysports.leagues.transactions" data-ylk="slk:describe fantasysports.leagues.transactions;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="79" class="table rapidnofollow " href="#" title="fantasysports.players">fantasysports.players</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="80" class="desc label rapidnofollow" data-name="fantasysports.players" data-ylk="slk:describe fantasysports.players;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="81" class="table rapidnofollow " href="#" title="fantasysports.players.ownership">fantasysports.players.ownership</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="82" class="desc label rapidnofollow" data-name="fantasysports.players.ownership" data-ylk="slk:describe fantasysports.players.ownership;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="83" class="table rapidnofollow " href="#" title="fantasysports.players.stats">fantasysports.players.stats</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="84" class="desc label rapidnofollow" data-name="fantasysports.players.stats" data-ylk="slk:describe fantasysports.players.stats;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="85" class="table rapidnofollow " href="#" title="fantasysports.teams">fantasysports.teams</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="86" class="desc label rapidnofollow" data-name="fantasysports.teams" data-ylk="slk:describe fantasysports.teams;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="87" class="table rapidnofollow " href="#" title="fantasysports.teams.roster">fantasysports.teams.roster</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="88" class="desc label rapidnofollow" data-name="fantasysports.teams.roster" data-ylk="slk:describe fantasysports.teams.roster;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="89" class="table rapidnofollow " href="#" title="fantasysports.teams.roster.stats">fantasysports.teams.roster.stats</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="90" class="desc label rapidnofollow" data-name="fantasysports.teams.roster.stats" data-ylk="slk:describe fantasysports.teams.roster.stats;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode fantasysports"><a data-rapid_p="91" class="table rapidnofollow " href="#" title="fantasysports.teams.stats">fantasysports.teams.stats</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="92" class="desc label rapidnofollow" data-name="fantasysports.teams.stats" data-ylk="slk:describe fantasysports.teams.stats;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="93" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#flickr">flickr</a>
+    </div>
+    <div id="flickr" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="94" class="table rapidnofollow " href="#" title="flickr.groups.info">flickr.groups.info</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="95" class="desc label rapidnofollow" data-name="flickr.groups.info" data-ylk="slk:describe flickr.groups.info;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="96" class="table rapidnofollow " href="#" title="flickr.groups.pools.photos">flickr.groups.pools.photos</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="97" class="desc label rapidnofollow" data-name="flickr.groups.pools.photos" data-ylk="slk:describe flickr.groups.pools.photos;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="98" class="table rapidnofollow " href="#" title="flickr.people.findbyusername">flickr.people.findbyusername</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="99" class="desc label rapidnofollow" data-name="flickr.people.findbyusername" data-ylk="slk:describe flickr.people.findbyusername;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="100" class="table rapidnofollow " href="#" title="flickr.people.info2">flickr.people.info2</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="101" class="desc label rapidnofollow" data-name="flickr.people.info2" data-ylk="slk:describe flickr.people.info2;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="102" class="table rapidnofollow " href="#" title="flickr.people.publicphotos">flickr.people.publicphotos</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="103" class="desc label rapidnofollow" data-name="flickr.people.publicphotos" data-ylk="slk:describe flickr.people.publicphotos;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="104" class="table rapidnofollow " href="#" title="flickr.photos.exif">flickr.photos.exif</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="105" class="desc label rapidnofollow" data-name="flickr.photos.exif" data-ylk="slk:describe flickr.photos.exif;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="106" class="table rapidnofollow " href="#" title="flickr.photos.info">flickr.photos.info</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="107" class="desc label rapidnofollow" data-name="flickr.photos.info" data-ylk="slk:describe flickr.photos.info;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="108" class="table rapidnofollow " href="#" title="flickr.photos.interestingness">flickr.photos.interestingness</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="109" class="desc label rapidnofollow" data-name="flickr.photos.interestingness" data-ylk="slk:describe flickr.photos.interestingness;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="110" class="table rapidnofollow " href="#" title="flickr.photos.recent">flickr.photos.recent</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="111" class="desc label rapidnofollow" data-name="flickr.photos.recent" data-ylk="slk:describe flickr.photos.recent;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="112" class="table rapidnofollow " href="#" title="flickr.photos.search">flickr.photos.search</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="113" class="desc label rapidnofollow" data-name="flickr.photos.search" data-ylk="slk:describe flickr.photos.search;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="114" class="table rapidnofollow " href="#" title="flickr.photos.sizes">flickr.photos.sizes</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="115" class="desc label rapidnofollow" data-name="flickr.photos.sizes" data-ylk="slk:describe flickr.photos.sizes;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="116" class="table rapidnofollow " href="#" title="flickr.photosets.info">flickr.photosets.info</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="117" class="desc label rapidnofollow" data-name="flickr.photosets.info" data-ylk="slk:describe flickr.photosets.info;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="118" class="table rapidnofollow " href="#" title="flickr.photosets.photos">flickr.photosets.photos</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="119" class="desc label rapidnofollow" data-name="flickr.photosets.photos" data-ylk="slk:describe flickr.photosets.photos;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="120" class="table rapidnofollow " href="#" title="flickr.places">flickr.places</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="121" class="desc label rapidnofollow" data-name="flickr.places" data-ylk="slk:describe flickr.places;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="122" class="table rapidnofollow " href="#" title="flickr.places.info">flickr.places.info</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="123" class="desc label rapidnofollow" data-name="flickr.places.info" data-ylk="slk:describe flickr.places.info;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode flickr"><a data-rapid_p="124" class="table rapidnofollow " href="#" title="flickr.urls.lookupuser">flickr.urls.lookupuser</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="125" class="desc label rapidnofollow" data-name="flickr.urls.lookupuser" data-ylk="slk:describe flickr.urls.lookupuser;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="126" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#geo">geo</a>
+    </div>
+    <div id="geo" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode geo"><a data-rapid_p="127" class="table rapidnofollow " href="#" title="geo.concordance">geo.concordance</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="128" class="desc label rapidnofollow" data-name="geo.concordance" data-ylk="slk:describe geo.concordance;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="129" class="table rapidnofollow " href="#" title="geo.continents">geo.continents</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="130" class="desc label rapidnofollow" data-name="geo.continents" data-ylk="slk:describe geo.continents;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="131" class="table rapidnofollow " href="#" title="geo.counties">geo.counties</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="132" class="desc label rapidnofollow" data-name="geo.counties" data-ylk="slk:describe geo.counties;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="133" class="table rapidnofollow " href="#" title="geo.countries">geo.countries</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="134" class="desc label rapidnofollow" data-name="geo.countries" data-ylk="slk:describe geo.countries;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="135" class="table rapidnofollow " href="#" title="geo.districts">geo.districts</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="136" class="desc label rapidnofollow" data-name="geo.districts" data-ylk="slk:describe geo.districts;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="137" class="table rapidnofollow " href="#" title="geo.oceans">geo.oceans</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="138" class="desc label rapidnofollow" data-name="geo.oceans" data-ylk="slk:describe geo.oceans;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="139" class="table rapidnofollow " href="#" title="geo.placefinder">geo.placefinder</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="140" class="desc label rapidnofollow" data-name="geo.placefinder" data-ylk="slk:describe geo.placefinder;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="141" class="table rapidnofollow " href="#" title="geo.placemaker">geo.placemaker</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="142" class="desc label rapidnofollow" data-name="geo.placemaker" data-ylk="slk:describe geo.placemaker;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="143" class="table rapidnofollow " href="#" title="geo.places">geo.places</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="144" class="desc label rapidnofollow" data-name="geo.places" data-ylk="slk:describe geo.places;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="145" class="table rapidnofollow " href="#" title="geo.places.ancestors">geo.places.ancestors</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="146" class="desc label rapidnofollow" data-name="geo.places.ancestors" data-ylk="slk:describe geo.places.ancestors;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="147" class="table rapidnofollow " href="#" title="geo.places.belongtos">geo.places.belongtos</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="148" class="desc label rapidnofollow" data-name="geo.places.belongtos" data-ylk="slk:describe geo.places.belongtos;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="149" class="table rapidnofollow " href="#" title="geo.places.children">geo.places.children</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="150" class="desc label rapidnofollow" data-name="geo.places.children" data-ylk="slk:describe geo.places.children;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="151" class="table rapidnofollow " href="#" title="geo.places.common">geo.places.common</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="152" class="desc label rapidnofollow" data-name="geo.places.common" data-ylk="slk:describe geo.places.common;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="153" class="table rapidnofollow " href="#" title="geo.places.descendants">geo.places.descendants</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="154" class="desc label rapidnofollow" data-name="geo.places.descendants" data-ylk="slk:describe geo.places.descendants;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="155" class="table rapidnofollow " href="#" title="geo.places.neighbors">geo.places.neighbors</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="156" class="desc label rapidnofollow" data-name="geo.places.neighbors" data-ylk="slk:describe geo.places.neighbors;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="157" class="table rapidnofollow " href="#" title="geo.places.parent">geo.places.parent</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="158" class="desc label rapidnofollow" data-name="geo.places.parent" data-ylk="slk:describe geo.places.parent;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="159" class="table rapidnofollow " href="#" title="geo.places.siblings">geo.places.siblings</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="160" class="desc label rapidnofollow" data-name="geo.places.siblings" data-ylk="slk:describe geo.places.siblings;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="161" class="table rapidnofollow " href="#" title="geo.placetypes">geo.placetypes</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="162" class="desc label rapidnofollow" data-name="geo.placetypes" data-ylk="slk:describe geo.placetypes;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="163" class="table rapidnofollow " href="#" title="geo.seas">geo.seas</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="164" class="desc label rapidnofollow" data-name="geo.seas" data-ylk="slk:describe geo.seas;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode geo"><a data-rapid_p="165" class="table rapidnofollow " href="#" title="geo.states">geo.states</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="166" class="desc label rapidnofollow" data-name="geo.states" data-ylk="slk:describe geo.states;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="167" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#local">local</a>
+    </div>
+    <div id="local" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode local"><a data-rapid_p="168" class="table rapidnofollow " href="#" title="local.search">local.search</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="169" class="desc label rapidnofollow" data-name="local.search" data-ylk="slk:describe local.search;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="170" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#search">search</a>
+    </div>
+    <div id="search" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode search"><a data-rapid_p="171" class="table rapidnofollow " href="#" title="search.ec">search.ec</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="172" class="desc label rapidnofollow" data-name="search.ec" data-ylk="slk:describe search.ec;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode search"><a data-rapid_p="173" class="table rapidnofollow " href="#" title="search.termextract">search.termextract</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="174" class="desc label rapidnofollow" data-name="search.termextract" data-ylk="slk:describe search.termextract;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="175" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#social">social</a>
+    </div>
+    <div id="social" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode social"><a data-rapid_p="176" class="table rapidnofollow " href="#" title="social.connections">social.connections</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="177" class="desc label rapidnofollow" data-name="social.connections" data-ylk="slk:describe social.connections;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="178" class="table rapidnofollow " href="#" title="social.contacts">social.contacts</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="179" class="desc label rapidnofollow" data-name="social.contacts" data-ylk="slk:describe social.contacts;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="180" class="table rapidnofollow " href="#" title="social.contacts.connections">social.contacts.connections</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="181" class="desc label rapidnofollow" data-name="social.contacts.connections" data-ylk="slk:describe social.contacts.connections;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="182" class="table rapidnofollow " href="#" title="social.contacts.sync">social.contacts.sync</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="183" class="desc label rapidnofollow" data-name="social.contacts.sync" data-ylk="slk:describe social.contacts.sync;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="184" class="table rapidnofollow " href="#" title="social.entities">social.entities</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="185" class="desc label rapidnofollow" data-name="social.entities" data-ylk="slk:describe social.entities;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="186" class="table rapidnofollow " href="#" title="social.notifications">social.notifications</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="187" class="desc label rapidnofollow" data-name="social.notifications" data-ylk="slk:describe social.notifications;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="188" class="table rapidnofollow " href="#" title="social.notifications.summary">social.notifications.summary</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="189" class="desc label rapidnofollow" data-name="social.notifications.summary" data-ylk="slk:describe social.notifications.summary;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="190" class="table rapidnofollow " href="#" title="social.presence">social.presence</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="191" class="desc label rapidnofollow" data-name="social.presence" data-ylk="slk:describe social.presence;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="192" class="table rapidnofollow " href="#" title="social.profile">social.profile</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="193" class="desc label rapidnofollow" data-name="social.profile" data-ylk="slk:describe social.profile;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="194" class="table rapidnofollow " href="#" title="social.profile.image">social.profile.image</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="195" class="desc label rapidnofollow" data-name="social.profile.image" data-ylk="slk:describe social.profile.image;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="196" class="table rapidnofollow " href="#" title="social.profile.status">social.profile.status</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="197" class="desc label rapidnofollow" data-name="social.profile.status" data-ylk="slk:describe social.profile.status;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="198" class="table rapidnofollow " href="#" title="social.profile.update">social.profile.update</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="199" class="desc label rapidnofollow" data-name="social.profile.update" data-ylk="slk:describe social.profile.update;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="200" class="table rapidnofollow " href="#" title="social.relationships">social.relationships</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="201" class="desc label rapidnofollow" data-name="social.relationships" data-ylk="slk:describe social.relationships;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode social"><a data-rapid_p="202" class="table rapidnofollow " href="#" title="social.urlinfo">social.urlinfo</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="203" class="desc label rapidnofollow" data-name="social.urlinfo" data-ylk="slk:describe social.urlinfo;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="204" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#timesense">timesense</a>
+    </div>
+    <div id="timesense" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode timesense"><a data-rapid_p="205" class="table rapidnofollow " href="#" title="timesense.trending">timesense.trending</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="206" class="desc label rapidnofollow" data-name="timesense.trending" data-ylk="slk:describe timesense.trending;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="207" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#weather">weather</a>
+    </div>
+    <div id="weather" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode weather"><a data-rapid_p="208" class="table rapidnofollow " href="#" title="weather.forecast">weather.forecast</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="209" class="desc label rapidnofollow" data-name="weather.forecast" data-ylk="slk:describe weather.forecast;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="210" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#yahoo">yahoo</a>
+    </div>
+    <div id="yahoo" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="211" class="table rapidnofollow " href="#" title="yahoo.caching">yahoo.caching</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="212" class="desc label rapidnofollow" data-name="yahoo.caching" data-ylk="slk:describe yahoo.caching;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="213" class="table rapidnofollow " href="#" title="yahoo.identity">yahoo.identity</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="214" class="desc label rapidnofollow" data-name="yahoo.identity" data-ylk="slk:describe yahoo.identity;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="215" class="table rapidnofollow " href="#" title="yahoo.pipes">yahoo.pipes</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="216" class="desc label rapidnofollow" data-name="yahoo.pipes" data-ylk="slk:describe yahoo.pipes;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="217" class="table rapidnofollow " href="#" title="yahoo.taiwan.lyre-item">yahoo.taiwan.lyre-item</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="218" class="desc label rapidnofollow" data-name="yahoo.taiwan.lyre-item" data-ylk="slk:describe yahoo.taiwan.lyre-item;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="219" class="table rapidnofollow " href="#" title="yahoo.taiwan.search.ec">yahoo.taiwan.search.ec</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="220" class="desc label rapidnofollow" data-name="yahoo.taiwan.search.ec" data-ylk="slk:describe yahoo.taiwan.search.ec;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="221" class="table rapidnofollow " href="#" title="yahoo.taiwan.uww-collections">yahoo.taiwan.uww-collections</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="222" class="desc label rapidnofollow" data-name="yahoo.taiwan.uww-collections" data-ylk="slk:describe yahoo.taiwan.uww-collections;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="223" class="table rapidnofollow " href="#" title="yahoo.taiwan.uww-entrywall">yahoo.taiwan.uww-entrywall</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="224" class="desc label rapidnofollow" data-name="yahoo.taiwan.uww-entrywall" data-ylk="slk:describe yahoo.taiwan.uww-entrywall;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="225" class="table rapidnofollow " href="#" title="yahoo.taiwan.uww-featwall">yahoo.taiwan.uww-featwall</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="226" class="desc label rapidnofollow" data-name="yahoo.taiwan.uww-featwall" data-ylk="slk:describe yahoo.taiwan.uww-featwall;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="227" class="table rapidnofollow " href="#" title="yahoo.taiwan.uww-want">yahoo.taiwan.uww-want</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="228" class="desc label rapidnofollow" data-name="yahoo.taiwan.uww-want" data-ylk="slk:describe yahoo.taiwan.uww-want;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yahoo"><a data-rapid_p="229" class="table rapidnofollow " href="#" title="yahoo.taiwan.uww-wants">yahoo.taiwan.uww-wants</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="230" class="desc label rapidnofollow" data-name="yahoo.taiwan.uww-wants" data-ylk="slk:describe yahoo.taiwan.uww-wants;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="231" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#yap">yap</a>
+    </div>
+    <div id="yap" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode yap"><a data-rapid_p="232" class="table rapidnofollow " href="#" title="yap.setsmallview">yap.setsmallview</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="233" class="desc label rapidnofollow" data-name="yap.setsmallview" data-ylk="slk:describe yap.setsmallview;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="234" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#ymail">ymail</a>
+    </div>
+    <div id="ymail" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode ymail"><a data-rapid_p="235" class="table rapidnofollow " href="#" title="ymail.folders">ymail.folders</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="236" class="desc label rapidnofollow" data-name="ymail.folders" data-ylk="slk:describe ymail.folders;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode ymail"><a data-rapid_p="237" class="table rapidnofollow " href="#" title="ymail.messages">ymail.messages</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="238" class="desc label rapidnofollow" data-name="ymail.messages" data-ylk="slk:describe ymail.messages;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode ymail"><a data-rapid_p="239" class="table rapidnofollow " href="#" title="ymail.msgcontent">ymail.msgcontent</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="240" class="desc label rapidnofollow" data-name="ymail.msgcontent" data-ylk="slk:describe ymail.msgcontent;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode ymail"><a data-rapid_p="241" class="table rapidnofollow " href="#" title="ymail.search">ymail.search</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="242" class="desc label rapidnofollow" data-name="ymail.search" data-ylk="slk:describe ymail.search;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="243" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#yql">yql</a>
+    </div>
+    <div id="yql" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode yql"><a data-rapid_p="244" class="table rapidnofollow " href="#" title="yql.env">yql.env</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="245" class="desc label rapidnofollow" data-name="yql.env" data-ylk="slk:describe yql.env;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yql"><a data-rapid_p="246" class="table rapidnofollow " href="#" title="yql.queries">yql.queries</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="247" class="desc label rapidnofollow" data-name="yql.queries" data-ylk="slk:describe yql.queries;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yql"><a data-rapid_p="248" class="table rapidnofollow " href="#" title="yql.queries.query">yql.queries.query</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="249" class="desc label rapidnofollow" data-name="yql.queries.query" data-ylk="slk:describe yql.queries.query;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yql"><a data-rapid_p="250" class="table rapidnofollow " href="#" title="yql.query.multi">yql.query.multi</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="251" class="desc label rapidnofollow" data-name="yql.query.multi" data-ylk="slk:describe yql.query.multi;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yql"><a data-rapid_p="252" class="table rapidnofollow " href="#" title="yql.storage">yql.storage</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="253" class="desc label rapidnofollow" data-name="yql.storage" data-ylk="slk:describe yql.storage;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yql"><a data-rapid_p="254" class="table rapidnofollow " href="#" title="yql.storage.admin">yql.storage.admin</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="255" class="desc label rapidnofollow" data-name="yql.storage.admin" data-ylk="slk:describe yql.storage.admin;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yql"><a data-rapid_p="256" class="table rapidnofollow " href="#" title="yql.table.desc">yql.table.desc</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="257" class="desc label rapidnofollow" data-name="yql.table.desc" data-ylk="slk:describe yql.table.desc;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yql"><a data-rapid_p="258" class="table rapidnofollow " href="#" title="yql.table.list">yql.table.list</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="259" class="desc label rapidnofollow" data-name="yql.table.list" data-ylk="slk:describe yql.table.list;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode yql"><a data-rapid_p="260" class="table rapidnofollow " href="#" title="yql.tables">yql.tables</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="261" class="desc label rapidnofollow" data-name="yql.tables" data-ylk="slk:describe yql.tables;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-group">
+    <div class="accordion-heading collapsed">
+        <i class="icon-caret-right"></i>
+        <a data-rapid_p="262" class="accordion-toggle rapidnofollow" data-toggle="collapse" data-parent="#dtAccordion" href="#data">data</a>
+    </div>
+    <div id="data" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <ul class="unstyled">
+                
+                    <li class="datatableNode data"><a data-rapid_p="263" class="table rapidnofollow " href="#" title="atom">atom</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="264" class="desc label rapidnofollow" data-name="atom" data-ylk="slk:describe atom;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="265" class="table rapidnofollow " href="#" title="csv">csv</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="266" class="desc label rapidnofollow" data-name="csv" data-ylk="slk:describe csv;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="267" class="table rapidnofollow " href="#" title="data.uri">data.uri</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="268" class="desc label rapidnofollow" data-name="data.uri" data-ylk="slk:describe data.uri;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="269" class="table rapidnofollow " href="#" title="feed">feed</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="270" class="desc label rapidnofollow" data-name="feed" data-ylk="slk:describe feed;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="271" class="table rapidnofollow " href="#" title="feednormalizer">feednormalizer</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="272" class="desc label rapidnofollow" data-name="feednormalizer" data-ylk="slk:describe feednormalizer;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="273" class="table rapidnofollow " href="#" title="html">html</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="274" class="desc label rapidnofollow" data-name="html" data-ylk="slk:describe html;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="275" class="table rapidnofollow " href="#" title="json">json</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="276" class="desc label rapidnofollow" data-name="json" data-ylk="slk:describe json;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="277" class="table rapidnofollow " href="#" title="rss">rss</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="278" class="desc label rapidnofollow" data-name="rss" data-ylk="slk:describe rss;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="279" class="table rapidnofollow " href="#" title="uritemplate">uritemplate</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="280" class="desc label rapidnofollow" data-name="uritemplate" data-ylk="slk:describe uritemplate;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="281" class="table rapidnofollow " href="#" title="xml">xml</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="282" class="desc label rapidnofollow" data-name="xml" data-ylk="slk:describe xml;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+                    <li class="datatableNode data"><a data-rapid_p="283" class="table rapidnofollow " href="#" title="xslt">xslt</a> 
+                        <span class="meta" style="display: none;">
+                            <a data-rapid_p="284" class="desc label rapidnofollow" data-name="xslt" data-ylk="slk:describe xslt;">desc</a>
+                            
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+            <div id="dtSearchContainer"></div>
+        </div>
+    </div>
+</div></div></div></div><div class="yui-layout-unit yui-layout-unit-center yui-layout-noscroll" style="position: absolute; height: 553px; width: 768px; top: 85px; left: 260px;" id="yui-gen3000008"><div style="height: 553px; width: 760px; top: 0px; left: 4px;" id="yui-gen3000009" class="yui-layout-wrap yui-layout"><div id="yui_3_11_0_4_1431611626138_139" class="yui-layout-doc" style="height: 553px; width: 760px;"><div class="yui-layout-unit yui-layout-unit-top yui-layout-noscroll yui-resize" style="height: 165px; position: absolute; width: 760px;" id="yui-gen3000012"><div style="height: 155px; width: 760px; top: 0px; left: 0px;" id="yui-gen3000013" class="yui-layout-wrap"><div id="yui_3_11_0_4_1431611626138_138" style="height: 155px; width: 760px; top: 0px;" class="yui-layout-bd yui-layout-bd-nohd yui-layout-bd-noft"><div id="topView">
+    <div id="yui_3_11_0_4_1431611626138_137" class="row-fluid" style="height: 100%;">
+        <div id="yui_3_11_0_4_1431611626138_136" class="span12" style="height: 100%;">
+            <div id="loginPrompt" class="alert alert-block" style="display: none;">
+                <button id="loginAlert" type="button" class="close" data-dismiss="alert">x</button>
+                Please <a href="https://login.yahoo.com/config/login?.done=http%3A%2F%2Fdeveloper.yahoo.com%2Fyql%2Fconsole%2F%3Fenv%3Dstore%3A%2F%2F0TxIGQMQbObzvU4Apia0V0%26_uiFocus%3Dcricket&amp;.intl=us&amp;.src=yql&amp;.pd=c%3DGg3SKnKp2e5WHYBcDIHv2eY-">sign in</a> to see and enable all tables.
+            </div>
+            <!-- console form -->
+            <div style="width: 275px; left: 190.3px; top: 33.5px; z-index: 300;" class="yui3-widget yui3-overlay yui3-widget-positioned yui3-widget-stacked yui3-overlay-hidden" id="yui_3_11_0_3_1431611626138_244"><form class="form-horizontal yui3-overlay-content yui3-widget-stdmod" id="permalinkholder"><div class="yui3-widget-bd alert alert-perma" style="padding:0">
+        <a id="closeperma" class="close" style="top:auto;right:5px">×</a><br>
+        <div class="control-group" style="margin-bottom: 0">
+            <label style="width:auto;padding:5px" class="control-label" for="shortperma">Short:</label>
+            <div style="margin-left:48px" class="controls">
+                <input style="font-style: italic;" id="shortpermaurl" class="input-medium" name="shortperma" value="Shortening..." readonly="readonly" type="text">
+            </div>
+        </div>
+        <div class="control-group" style="margin-bottom: 0">
+            <label style="width:auto;padding:5px" class="control-label" for="longperma">Long:</label>
+            <div style="margin-left:48px" class="controls">
+                <input id="longpermaurl" style="width:205px" class="input-large" name="longperma" value="http://developer.yahoo.com/yql/console/?q=select%20*%20from%20cricket.scorecard.live.summary&amp;env=store%3A%2F%2F0TxIGQMQbObzvU4Apia0V0" readonly="readonly" type="text">
+            </div>
+        </div>
+    </div></form></div>
+            <form id="queryForm">
+                <h4>YOUR YQL STATEMENT
+                    <span id="actions">
+                        <a data-rapid_p="1" title="Generate a permalink to this query" id="perma" class="action rapidnofollow" href="http://developer.yahoo.com/yql/console/?q=select%20*%20from%20cricket.scorecard.live.summary&amp;env=store%3A%2F%2F0TxIGQMQbObzvU4Apia0V0">Permalink</a>
+                    </span>
+                    <span id="shareContainer" class="pull-right">
+                            <a data-rapid_p="2" title="Create an alias to this query" id="createQueryAliasLink" class="action rapidnofollow" href="#">Create Query Alias</a>
+                    </span>
+                </h4>
+                <div id="qidHolder">
+                    <textarea id="qid" class="span12" rows="3">select * from cricket.scorecard.live.summary</textarea>
+                </div>
+                <div id="queryFormButtons" class="form-inline" style="margin-top: .7em;">
+                    <div id="format" class="btn-group pull-left" data-toggle="buttons-radio">
+                        <button data-rapid_p="3" title="Get results as XML" id="xmlButton" type="button" class="btn active" data-format="xml">XML</button>
+                        <button data-rapid_p="4" title="Get results as JSON" id="jsonButton" type="button" class="btn" data-format="json">JSON</button>
+                    </div>
+                    <input data-rapid_p="5" title="Name of JSONP callback (optional)" id="callbackInput" placeholder="Callback" style="margin-left: 1em; display: none;" type="text">
+                    <label title="Include info about the YQL call" class="checkbox inline offset" style="width: 7.5em; margin: -.4em 0 0 1em;">
+                        <input data-rapid_p="6" id="diagnosticsCheckbox" checked="checked" type="checkbox">
+                        <span style="margin-left: .35em;">Diagnostics</span>
+                    </label>
+                    <label title="Enable network-level logging" class="checkbox inline offset" style="width: 5em; margin-top: -.4em;">
+                        <input data-rapid_p="7" id="debugCheckbox" type="checkbox"> 
+                        <span style="margin-left: .35em;">Debug</span>
+                    </label>
+                    <button data-rapid_p="8" id="submitMeButton" type="button" class="btn btn-primary" style="margin-left: 1em;" data-ylk="ltxt:test;">Test</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div></div></div><div class="yui-resize-handle yui-resize-handle-b" id="yui-gen3000014"><div class="yui-layout-resize-knob"></div></div></div><div style="height: 165px; width: 0px;" class="yui-resize-proxy"><div class="yui-layout-handle-b"></div></div><div style="position: absolute; height: 388px; width: 760px; top: 165px; left: 0px;" class="yui-layout-noscroll yui-layout-unit yui-layout-unit-center" id="yui-gen3000015"><div style="height: 378px; width: 760px; top: 10px; left: 0px;" id="yui-gen3000016" class="yui-layout-wrap"><div id="yui_3_11_0_2_1431611626138_10" style="height: 378px; width: 760px; top: 0px;" class="yui-layout-bd yui-layout-bd-nohd yui-layout-bd-noft"><div id="centerBottomView">
+    <div id="outputContainer" class="row-fluid">
+        <div id="errordiv" class="alert" style="display: none; height: 0em;">
+            <div id="errortext"><div class="errarea">Cannot find required keys in where clause;   expecting required keys: (match_id)</div></div>
+        </div>
+        <div style="top: 0px;" id="output" class="tabbable nav-tabs" data-toggle="tab">
+            <ul id="resultsNav" class="nav nav-tabs"><li id="yui_3_11_0_3_1431611626138_26" class="tab results-tab nav-tab active"><a data-rapid_p="1" id="formattedTab" class="rapidnofollow" href="#formattedView" data-toggle="tab">Formatted View</a></li><li class="tab results-tab nav-tab" style="margin-right: 1em;"><a data-rapid_p="2" id="treeTab" class="rapidnofollow" href="#treeView" data-toggle="tab">Tree View</a></li><li id="viewMenu" class="dropdown">
+                    <a data-rapid_p="3" class="dropdown-toggle rapidnofollow" id="drop4" role="button" data-toggle="dropdown" href="#">
+                        View
+                        <b class="caret"></b>
+                    </a>
+                    <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                        <li>
+                            <a data-rapid_p="4" id="expandMenuLink" class="rapidnofollow" tabindex="-1" href="#">Expand<i id="expand-check" class="icon-ok" style="display: none;"></i></a>
+                        </li>
+                        <li>
+                            <a data-rapid_p="5" id="wrapMenuLink" class="rapidnofollow" tabindex="-1" href="#">Wrap Text<i id="wrap-check" class="icon-ok" style="display: none;"></i></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a data-rapid_p="6" id="selectMenuLink" class="rapidnofollow" tabindex="-1" href="#">Select All</a>
+                        </li>
+                    </ul>
+                </li><!-- <li><a href="#performanceTab" data-toggle="tab">Performance</a></li> --><li id="resultsViewTypeContainer" class="form-inline">
+                    <label title="Expand the results view" id="expandArea" class="checkbox" for="expand" style="cursor: pointer;">
+                        <input data-rapid_p="7" id="expand" name="expand" type="checkbox">
+                        <span style="margin-left: .4em">Expand</span>
+                    </label>
+                    <label title="Enable word-wrap on results" id="wrapLabel" class="checkbox" for="wrap" style="cursor: pointer; margin-left: 1.5em;">
+                        <input data-rapid_p="8" id="wrap" name="wrap" style="padding-top: -1em" type="checkbox">
+                        <span style="margin-left: .4em;">Wrap Text</span>
+                    </label>
+                    <span id="selectTextContainer" style="margin-left: 1.5em; margin-top: 1em;">
+                        <a data-rapid_p="9" id="selectText" class="hidden-tablet rapidnofollow" href="#" style="margin-top: 3em;">Select All</a>
+                    </span>
+                </li><li class="tab volatile pull-right">
+    <a href="#queryBuilderTab" data-use="">cricket.scorecard.live.summary</a>
+    </li></ul>
+            <div id="outputTabContent" class="tab-content tab-pane">
+                <div class="tab-pane active in" id="formattedView">
+                    <pre style="background-color: rgb(255, 255, 255);" id="viewContent"><pre class="xml" id="prexml"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span><span class="sy0">=</span><span class="st0">"1.0"</span> <span class="re0">encoding</span><span class="sy0">=</span><span class="st0">"UTF-8"</span><span class="re4">?&gt;</span></span>
+<span class="sc3"><span class="re1">&lt;query</span> <span class="re0">xmlns:yahoo</span><span class="sy0">=</span><span class="st0">"http://www.yahooapis.com/v1/base.rng"</span></span>
+<span class="sc3">    <span class="re0">yahoo:count</span><span class="sy0">=</span><span class="st0">"1"</span> <span class="re0">yahoo:created</span><span class="sy0">=</span><span class="st0">"2015-05-14T18:27:36Z"</span> <span class="re0">yahoo:lang</span><span class="sy0">=</span><span class="st0">"en-US"</span><span class="re4">&gt;</span></span>
+    <span class="sc3"><span class="re1">&lt;diagnostics<span class="re4">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;cache</span> <span class="re0">execution-start-time</span><span class="sy0">=</span><span class="st0">"1"</span> <span class="re0">execution-stop-time</span><span class="sy0">=</span><span class="st0">"3"</span></span>
+<span class="sc3">            <span class="re0">execution-time</span><span class="sy0">=</span><span class="st0">"2"</span> <span class="re0">method</span><span class="sy0">=</span><span class="st0">"GET"</span> <span class="re0">type</span><span class="sy0">=</span><span class="st0">"MEMCACHED"</span><span class="re4">&gt;</span><span class="re2">&lt;!<span class="br0">[</span>CDATA<span class="br0">[</span></span>ENV.query.yahooapis.com.store://0TxIGQMQbObzvU4Apia0V0.34d6179e5be0d065b86bb468d55c0d5c<span class="re3"><span class="br0">]</span><span class="br0">]</span><span class="re4">&gt;</span></span><span class="re1">&lt;/cache<span class="re4">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;cache</span> <span class="re0">execution-start-time</span><span class="sy0">=</span><span class="st0">"3"</span> <span class="re0">execution-stop-time</span><span class="sy0">=</span><span class="st0">"6"</span></span>
+<span class="sc3">            <span class="re0">execution-time</span><span class="sy0">=</span><span class="st0">"3"</span> <span class="re0">method</span><span class="sy0">=</span><span class="st0">"GET"</span> <span class="re0">type</span><span class="sy0">=</span><span class="st0">"MEMCACHED"</span><span class="re4">&gt;</span><span class="re2">&lt;!<span class="br0">[</span>CDATA<span class="br0">[</span></span>TABLE.query.yahooapis.com.cricket.scorecard.live.summary.4daacfcfafc467783e90b0c5c31a615f<span class="re3"><span class="br0">]</span><span class="br0">]</span><span class="re4">&gt;</span></span><span class="re1">&lt;/cache<span class="re4">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;publiclyCallable<span class="re4">&gt;</span></span></span>true<span class="sc3"><span class="re1">&lt;/publiclyCallable<span class="re4">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;url</span> <span class="re0">execution-start-time</span><span class="sy0">=</span><span class="st0">"7"</span> <span class="re0">execution-stop-time</span><span class="sy0">=</span><span class="st0">"19"</span> <span class="re0">execution-time</span><span class="sy0">=</span><span class="st0">"12"</span><span class="re4">&gt;</span><span class="re2">&lt;!<span class="br0">[</span>CDATA<span class="br0">[</span></span>http://cricketwebservice/ws/cwsapi/live/livematches.php?<span class="re0">output</span><span class="sy0">=</span>summary<span class="re3"><span class="br0">]</span><span class="br0">]</span><span class="re4">&gt;</span></span><span class="re1">&lt;/url<span class="re4">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;user-time<span class="re4">&gt;</span></span></span>21<span class="sc3"><span class="re1">&lt;/user-time<span class="re4">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;service-time<span class="re4">&gt;</span></span></span>17<span class="sc3"><span class="re1">&lt;/service-time<span class="re4">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;build-version<span class="re4">&gt;</span></span></span>0.2.509<span class="sc3"><span class="re1">&lt;/build-version<span class="re4">&gt;</span></span></span>
+    <span class="sc3"><span class="re1">&lt;/diagnostics<span class="re4">&gt;</span></span></span> 
+    <span class="sc3"><span class="re1">&lt;results<span class="re4">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;Scorecard<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;v<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/v<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;mid<span class="re4">&gt;</span></span></span>190921<span class="sc3"><span class="re1">&lt;/mid<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;m<span class="re4">&gt;</span></span></span>3<span class="sc3"><span class="re1">&lt;/m<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;series<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;series_id<span class="re4">&gt;</span></span></span>12208<span class="sc3"><span class="re1">&lt;/series_id<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;series_name<span class="re4">&gt;</span></span></span>Indian Premier League, 2015<span class="sc3"><span class="re1">&lt;/series_name<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;/series<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;ecf<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/ecf<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;place<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;vid<span class="re4">&gt;</span></span></span>168<span class="sc3"><span class="re1">&lt;/vid<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;stadium<span class="re4">&gt;</span></span></span>Wankhede Stadium, Mumbai<span class="sc3"><span class="re1">&lt;/stadium<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;city<span class="re4">&gt;</span></span></span>Mumbai<span class="sc3"><span class="re1">&lt;/city<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;country<span class="re4">&gt;</span></span></span>India<span class="sc3"><span class="re1">&lt;/country<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;Gimaget<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/venue_168_thumb-4-3-2012-2b4aba62098dc0190c8ec8596a4e0d3e.jpg<span class="sc3"><span class="re1">&lt;/Gimaget<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;date<span class="re4">&gt;</span></span></span>20150514143000<span class="sc3"><span class="re1">&lt;/date<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;enddate<span class="re4">&gt;</span></span></span>20150514182351<span class="sc3"><span class="re1">&lt;/enddate<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;/place<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;mn<span class="re4">&gt;</span></span></span>Match 51<span class="sc3"><span class="re1">&lt;/mn<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;teams<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;i<span class="re4">&gt;</span></span></span>1111<span class="sc3"><span class="re1">&lt;/i<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;fn<span class="re4">&gt;</span></span></span>Mumbai<span class="sc3"><span class="re1">&lt;/fn<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;sn<span class="re4">&gt;</span></span></span>MUM<span class="sc3"><span class="re1">&lt;/sn<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;logo<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;std<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/mumbai_indians-9-3-2013-5b4fb68dbb093e3440e976c7f315fff7.jpg<span class="sc3"><span class="re1">&lt;/std<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;small<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/mumbai_indians_small-9-3-2013-ab301a634429969914444c04fcfedd0b.jpg<span class="sc3"><span class="re1">&lt;/small<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;/logo<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;flag<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;std<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/mumbai_indians_flag-30-3-2014-17163be24e02eb29b0c3c0230032d9ac.gif<span class="sc3"><span class="re1">&lt;/std<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;small<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/mumbai_indians_flag_small-30-3-2014-3f0aabd8109d577ea9a8f6c8262b2135.gif<span class="sc3"><span class="re1">&lt;/small<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;roundstd<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/1111-9-3-2013-a9f71f107f7e69eb9538e18e16db0e84.png<span class="sc3"><span class="re1">&lt;/roundstd<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;roundsmall<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/1111_s-9-3-2013-2c92d8eb6800627a8303fc2614afcd73.png<span class="sc3"><span class="re1">&lt;/roundsmall<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;roundlarge<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/1111_l-9-3-2013-bf7d8be8c9dae7eb3c655dee36deaff2.png<span class="sc3"><span class="re1">&lt;/roundlarge<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;/flag<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;/teams<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;teams<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;i<span class="re4">&gt;</span></span></span>1106<span class="sc3"><span class="re1">&lt;/i<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;fn<span class="re4">&gt;</span></span></span>Kolkata<span class="sc3"><span class="re1">&lt;/fn<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;sn<span class="re4">&gt;</span></span></span>KOL<span class="sc3"><span class="re1">&lt;/sn<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;logo<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;std<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/kolkata_knight_riders-9-3-2013-cc97d6478d5605ca2aca8aea8e79296e.jpg<span class="sc3"><span class="re1">&lt;/std<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;small<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/kolkata_knight_riders_small-9-3-2013-a3706f46169bc072681273e9388a8efb.jpg<span class="sc3"><span class="re1">&lt;/small<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;/logo<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;flag<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;std<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/kolkata_knight_riders_flag-30-3-2014-9ef0ae3c7e06e70ab74abcac3a2d193d.gif<span class="sc3"><span class="re1">&lt;/std<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;small<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/kolkata_knight_riders_flag_small-30-3-2014-ce97fa9a54033d9cfee32fedc67a5f13.gif<span class="sc3"><span class="re1">&lt;/small<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;roundstd<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/1106-9-3-2013-2bad8e997b9885081fc917882982966f.png<span class="sc3"><span class="re1">&lt;/roundstd<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;roundsmall<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/1106_s-9-3-2013-9fb84a214beb878cefcddb489cd0d4bb.png<span class="sc3"><span class="re1">&lt;/roundsmall<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;roundlarge<span class="re4">&gt;</span></span></span>https://s.yimg.com/qx/cricket/fufp/images/1106_l-9-3-2013-5c33269abbec9a1abd226e9be2ee15ab.png<span class="sc3"><span class="re1">&lt;/roundlarge<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;/flag<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;/teams<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;past_ings<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;s<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;t<span class="re4">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/t<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;i<span class="re4">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/i<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;ps<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/ps<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;stay_live<span class="re4">&gt;</span></span></span>Yes<span class="sc3"><span class="re1">&lt;/stay_live<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;ld<span class="re4">&gt;</span></span></span>No<span class="sc3"><span class="re1">&lt;/ld<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;ldmsg</span><span class="re4">/&gt;</span></span>
+                    <span class="sc3"><span class="re1">&lt;pms<span class="re4">&gt;</span></span></span>complete<span class="sc3"><span class="re1">&lt;/pms<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;a<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;fo<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/fo<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;pp</span><span class="re4">/&gt;</span></span>
+                        <span class="sc3"><span class="re1">&lt;i<span class="re4">&gt;</span></span></span>1106<span class="sc3"><span class="re1">&lt;/i<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;cr<span class="re4">&gt;</span></span></span>8.3<span class="sc3"><span class="re1">&lt;/cr<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;r<span class="re4">&gt;</span></span></span>166<span class="sc3"><span class="re1">&lt;/r<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;o<span class="re4">&gt;</span></span></span>20<span class="sc3"><span class="re1">&lt;/o<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;w<span class="re4">&gt;</span></span></span>7<span class="sc3"><span class="re1">&lt;/w<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;b<span class="re4">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/b<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;lb<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/lb<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;wd<span class="re4">&gt;</span></span></span>7<span class="sc3"><span class="re1">&lt;/wd<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;nb<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/nb<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;pt<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/pt<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;l<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/l<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;cp<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;cp<span class="re4">&gt;</span></span></span>6<span class="sc3"><span class="re1">&lt;/cp<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;bls<span class="re4">&gt;</span></span></span>5<span class="sc3"><span class="re1">&lt;/bls<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;s<span class="re4">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/s<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;/cp<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;/a<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;rts<span class="re4">&gt;</span></span></span>1431627359<span class="sc3"><span class="re1">&lt;/rts<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;tz<span class="re4">&gt;</span></span></span>+05:30<span class="sc3"><span class="re1">&lt;/tz<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;/s<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;d<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;a<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;t<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;i<span class="re4">&gt;</span></span></span>3729<span class="sc3"><span class="re1">&lt;/i<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;a<span class="re4">&gt;</span></span></span>3<span class="sc3"><span class="re1">&lt;/a<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;c<span class="re4">&gt;</span></span></span>not out<span class="sc3"><span class="re1">&lt;/c<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;dt</span><span class="re4">/&gt;</span></span>
+                            <span class="sc3"><span class="re1">&lt;fd<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/fd<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;bd<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/bd<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;cb<span class="re4">&gt;</span></span></span>no<span class="sc3"><span class="re1">&lt;/cb<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;b<span class="re4">&gt;</span></span></span>7<span class="sc3"><span class="re1">&lt;/b<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;r<span class="re4">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/r<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;sr<span class="re4">&gt;</span></span></span>14.285714285714<span class="sc3"><span class="re1">&lt;/sr<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;four<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/four<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;six<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/six<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;name<span class="re4">&gt;</span></span></span>Piyush Chawla<span class="sc3"><span class="re1">&lt;/name<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;/t<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;t<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;i<span class="re4">&gt;</span></span></span>5221<span class="sc3"><span class="re1">&lt;/i<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;a<span class="re4">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/a<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;c<span class="re4">&gt;</span></span></span>not out<span class="sc3"><span class="re1">&lt;/c<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;dt</span><span class="re4">/&gt;</span></span>
+                            <span class="sc3"><span class="re1">&lt;fd<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/fd<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;bd<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/bd<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;cb<span class="re4">&gt;</span></span></span>no<span class="sc3"><span class="re1">&lt;/cb<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;b<span class="re4">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/b<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;r<span class="re4">&gt;</span></span></span>5<span class="sc3"><span class="re1">&lt;/r<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;sr<span class="re4">&gt;</span></span></span>250<span class="sc3"><span class="re1">&lt;/sr<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;four<span class="re4">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/four<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;six<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/six<span class="re4">&gt;</span></span></span>
+                            <span class="sc3"><span class="re1">&lt;name<span class="re4">&gt;</span></span></span>Umesh Yadav<span class="sc3"><span class="re1">&lt;/name<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;/t<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;/a<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;/d<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;/past_ings<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;past_ings<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;s<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;t<span class="re4">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/t<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;i<span class="re4">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/i<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;ps<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/ps<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;stay_live<span class="re4">&gt;</span></span></span>Yes<span class="sc3"><span class="re1">&lt;/stay_live<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;ld<span class="re4">&gt;</span></span></span>No<span class="sc3"><span class="re1">&lt;/ld<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;ldmsg</span><span class="re4">/&gt;</span></span>
+                    <span class="sc3"><span class="re1">&lt;pms<span class="re4">&gt;</span></span></span>live<span class="sc3"><span class="re1">&lt;/pms<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;a<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;fo<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/fo<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;pp</span><span class="re4">/&gt;</span></span>
+                        <span class="sc3"><span class="re1">&lt;i<span class="re4">&gt;</span></span></span>1111<span class="sc3"><span class="re1">&lt;/i<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;cr<span class="re4">&gt;</span></span></span>8.55<span class="sc3"><span class="re1">&lt;/cr<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;r<span class="re4">&gt;</span></span></span>171<span class="sc3"><span class="re1">&lt;/r<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;o<span class="re4">&gt;</span></span></span>20<span class="sc3"><span class="re1">&lt;/o<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;w<span class="re4">&gt;</span></span></span>4<span class="sc3"><span class="re1">&lt;/w<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;b<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/b<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;lb<span class="re4">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/lb<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;wd<span class="re4">&gt;</span></span></span>6<span class="sc3"><span class="re1">&lt;/wd<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;nb<span class="re4">&gt;</span></span></span>3<span class="sc3"><span class="re1">&lt;/nb<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;pt<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/pt<span class="re4">&gt;</span></span></span>
+                        <span class="sc3"><span class="re1">&lt;l<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/l<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;/a<span class="re4">&gt;</span></span></span>
+                    <span class="sc3"><span class="re1">&lt;tz<span class="re4">&gt;</span></span></span>+05:30<span class="sc3"><span class="re1">&lt;/tz<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;/s<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;/past_ings<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;toss<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;win<span class="re4">&gt;</span></span></span>1106<span class="sc3"><span class="re1">&lt;/win<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;bat<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/bat<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;text<span class="re4">&gt;</span></span></span>xxx-xxx-xxx<span class="sc3"><span class="re1">&lt;/text<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;/toss<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;result<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;r<span class="re4">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/r<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;winner<span class="re4">&gt;</span></span></span>1111<span class="sc3"><span class="re1">&lt;/winner<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;by<span class="re4">&gt;</span></span></span>5<span class="sc3"><span class="re1">&lt;/by<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;how<span class="re4">&gt;</span></span></span>runs<span class="sc3"><span class="re1">&lt;/how<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;isdl<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/isdl<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;isso<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/isso<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;isff<span class="re4">&gt;</span></span></span>0<span class="sc3"><span class="re1">&lt;/isff<span class="re4">&gt;</span></span></span>
+                <span class="sc3"><span class="re1">&lt;desc</span><span class="re4">/&gt;</span></span>
+            <span class="sc3"><span class="re1">&lt;/result<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;ms<span class="re4">&gt;</span></span></span>Match Ended<span class="sc3"><span class="re1">&lt;/ms<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;mt<span class="re4">&gt;</span></span></span>3<span class="sc3"><span class="re1">&lt;/mt<span class="re4">&gt;</span></span></span>
+            <span class="sc3"><span class="re1">&lt;cts<span class="re4">&gt;</span></span></span>1431628032<span class="sc3"><span class="re1">&lt;/cts<span class="re4">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;/Scorecard<span class="re4">&gt;</span></span></span>
+    <span class="sc3"><span class="re1">&lt;/results<span class="re4">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;/query<span class="re4">&gt;</span></span></span>
+&nbsp;</pre></pre>
+                </div>
+                <div class="tab-pane" id="treeView">
+                    <!-- <pre id="treeContent" class="viewContent"></pre> -->
+                </div>
+                <div class="tab-pane" id="perfView">
+                    <div id="perf-container">
+                        <div id="perf-chart"></div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="queryBuilderTab">
+                    <div id="TQview" class="mpanel">
+                        <div id="TQloading">
+                            <h5 style="font-family: sans-serif; color: #000;">Retrieving data...</h5>
+                            <div class="progress progress-striped" style="width: 15em;"><div class="bar" style="width: 100%;"></div></div>
+                        </div>                      
+                        <div class="mpanelcontent" id="tqviewcontent">                          
+                            <div id="builderHolder" class="accordion"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="theRestQuery">
+                    <h4 id="yui_3_11_0_4_1431611626138_178">
+                        <span>THE REST QUERY</span>
+                        <a id="yui_3_11_0_4_1431611626138_177" href="http://developer.yahoo.com/yql/guide/running-chapt.html" target="_blank" style="font-weight: normal; margin-left: .7em;">How do I use this?</a>
+                    </h4>
+                    <input value="https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20cricket.scorecard.live.summary&amp;diagnostics=true&amp;env=store%3A%2F%2F0TxIGQMQbObzvU4Apia0V0" class="span12" id="yqlurl" name="copytoclip" readonly="readonly" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div></div></div></div></div></div><div class="yui-layout-unit yui-layout-unit-bottom yui-layout-noscroll" style="height: 40px; position: absolute; top: 638px; width: 1288px;" id="yui-gen3000010"><div style="height: 40px; width: 1288px; top: 0px; left: 0px;" id="yui-gen3000011" class="yui-layout-wrap"><div id="yui_3_11_0_2_1431611626138_13" style="height: 40px; width: 1288px; top: 0px;" class="yui-layout-bd yui-layout-bd-nohd yui-layout-bd-noft"><div id="bottomView">
+    <div id="ft">
+        <div id="ydn-footer">
+            <div id="yui_3_11_0_2_1431611626138_12" class="ydn-footer-row2wrap">
+                <div id="yui_3_11_0_2_1431611626138_11" class="ydn-footer-row2">
+                    <ul class="ydn-contact unstyled">
+                        <li class="ydn-divider-none">
+                            <a data-rapid_p="1" href="https://developer.yahoo.com/register">Contact us</a>
+                        </li>
+                        <li class="ydn-divider-left">
+                            <a data-rapid_p="2" href="https://developer.yahoo.com/forum/YQL">YQL Forum</a>
+                        </li>
+                        <li class="ydn-divider-left">
+                            <a data-rapid_p="3" id="ydn-bug-report" href="https://developer.yahoo.com/homepage/bugreport.php">Report a bug</a>
+                        </li>
+                        <li class="ydn-divider-left">
+                            <a data-rapid_p="4" href="http://info.yahoo.com/copyright/us/details.html">Copyright</a>
+                        </li>
+                        <li class="ydn-divider-left">
+                            <a data-rapid_p="5" href="http://info.yahoo.com/privacy/us/yahoo/yql/details.html">Privacy Policy</a>
+                        </li>
+                        <li class="ydn-divider-left">
+                            <a data-rapid_p="6" href="http://info.yahoo.com/legal/us/yahoo/yql/yql-4307.html">Terms of Use</a>
+                        </li>
+                    </ul>
+                <div class="ydn-footer-content" role="contentinfo">Copyright © 2014 Yahoo! Inc. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div style="display:none;">
+            <iframe id="yui-history-iframe" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/blank.html"></iframe>
+            <input value="h=desc+cricket.scorecard.live|h=select+*+from+cricket.scorecard.live.summary" id="yui-history-field">
+            <div id="datasourcescontent"></div>
+            <div id="formatviewcontent"></div>
+        </div>
+        <script type="text/javascript">YQLConfig={"partner":true,"env":"store:\/\/0TxIGQMQbObzvU4Apia0V0","search":null,"examples":[{"friendly_query":"Get my social graph","login":"true","yql_query":"select * from social.relationships where owner_guid=me"},{"friendly_query":"Get the flickr image url by photo ID","yql_query":"select urls.url from flickr.photos.info where photo_id=2439864402 and api_key=\"your key here\""},{"friendly_query":"Get san francisco geo data","yql_query":"select * from geo.places where text=\"san francisco, ca\""},{"friendly_query":"Get san francisco woeid","yql_query":"select woeid from geo.places where text=\"san francisco, ca\""},{"friendly_query":"Get geo details about San Francisco","yql_query":"select * from geo.places.parent where child_woeid in (select woeid from geo.places where text=\"san francisco, ca\")"},{"friendly_query":"Find sushi in San Francisco","yql_query":"select * from local.search where query=\"sushi\" and location=\"san francisco, ca\""},{"friendly_query":"Find sushi restaurants in San Francisco with an average rating of 4","yql_query":"select * from local.search where query=\"sushi\" and location=\"san francisco, ca\" and Rating.AverageRating=4"},{"friendly_query":"Get RSS feed from Yahoo! News top stories","yql_query":"select title from rss where url=\"http:\/\/rss.news.yahoo.com\/rss\/topstories\""},{"friendly_query":"Extract the headlines from yahoo finance using xpath","yql_query":"select * from html where url='http:\/\/finance.yahoo.com\/q?s=yhoo' and xpath='\/\/div[@id=\"yfi_headlines\"]\/div[2]\/ul\/li\/a'"},{"friendly_query":"Aggregate and filter multiple rss feeds","yql_query":"select * from rss where url in (select title from atom where url=\"http:\/\/spreadsheets.google.com\/feeds\/list\/pg_T0Mv3iBwIJoc82J1G8aQ\/od6\/public\/basic\")"},{"friendly_query":"Get my profile data","login":"true","yql_query":"select * from social.profile where guid=me"},{"friendly_query":"Get my friends","login":"true","yql_query":"select * from social.connections where owner_guid=me"},{"friendly_query":"Get all my friend profiles","login":"true","yql_query":"select * from social.profile where guid in (select guid from social.connections where owner_guid=me)"},{"friendly_query":"Get my friends nicknames","login":"true","yql_query":"select nickname from social.profile where guid in (select guid from social.connections where owner_guid=me)"},{"friendly_query":"Get my last added friend","login":"true","yql_query":"select * from social.profile where guid in (select guid from social.connections where owner_guid=me) | tail(count=1)"},{"friendly_query":"Get my friends sorted by nickname","login":"true","yql_query":"select * from social.profile where guid in (select guid from social.connections where owner_guid=me) | sort(field=\"nickname\")"},{"friendly_query":"Get 10 flickr \"cat\" photos","yql_query":"select * from flickr.photos.search where text=\"Cat\" limit 10 and api_key=\"your key here\""},{"friendly_query":"Get a flickr photo by photo ID","yql_query":"select * from flickr.photos.info where photo_id=2439864402 and api_key=\"your key here\""}],"is_logged_in":true,"login_url":"https:\/\/login.yahoo.com\/config\/login?.done=http%3A%2F%2Fdeveloper.yahoo.com%2Fyql%2Fconsole%2F%3Fenv%3Dstore%3A%2F%2F0TxIGQMQbObzvU4Apia0V0%26_uiFocus%3Dcricket&.intl=us&.src=yql&.pd=c%3DGg3SKnKp2e5WHYBcDIHv2eY-","crumb":"en\/kfzs2QOs","tables":null,"webworker":"..\/rapid\/rapidworker-1.0.js","docname":"YQL Console","spaceid":"1197686933","version":"1.1.787","tracked_mods":{"yql-header":"YQL header","dtAccordion":"tables list","queryForm":"query form","resultsNav":"output tabs","ydn-footer":"YDN footer"}}</script><script type="text/javascript">var State = function(cfg) { this.toggle = function(key){ var state = !this.get(key); this.set(key, state); }; var attrs = {"collapse_right":{"value":false},"collapse_left":{"value":false},"browser":{"value":""},"screen_size":{"value":""},"time":{"value":""},"is_logged_in":{"value":true},"format":{"value":"xml"},"table_count":{"value":null},"expand":{"value":false},"wrap":{"value":false},"open_tables":{"value":""},"open_user_data":{"value":""},"community_tables":{"value":""},"results_view_tab":{"value":""},"results_view_type":{"value":""},"queries_run":{"value":""}}; this.addAttrs(attrs, cfg); }</script> <script language="javascript">
+        
+YUI.YUICfg = {"gallery":"yui:gallery-2011.04.20-13-04","groups":{"group0d9d821fd95f957944c70b69b28ef8dd5":{"base":"https://s.yimg.com/","comboBase":"https://s.yimg.com/zz/combo?","modules":{"media-module_ydn_header":{"path":"os/mit/media/m/ydn/module_ydn_header-min-1767180.js"}},"combine":true,"filter":"min","root":"/"}},"combine":true,"allowRollup":true,"comboBase":"https://s.yimg.com/zz/combo?","maxURLLength":"2000"}
+YUI.YUICfg.root='yui:'+YUI.version+'/build/';
+YMedia.applyConfig(YUI.YUICfg);
+YUI.Env[YUI.version].base = 'https://s.yimg.com/';
+YUI.Env[YUI.version].comboBase = 'https://s.yimg.com/zz/combo?';
+YUI.Env[YUI.version].root = 'yui:'+YUI.version+'/build/';
+YMedia.use("media-module_ydn_header",function(Y){
+          
+           
+});
+
+        
+        </script><script type="text/javascript">YUI_config = {"combine":true,"gallery":"gallery-2013.03.13-20-05","comboBase":"https:\/\/s.yimg.com\/zz\/combo?","root":"yui:3.11.0\/build\/","groups":{"app":{"comboBase":"https:\/\/s.yimg.com\/zz\/combo?","combine":true,"root":"","modules":{"axis-base":{"requires":["classnamemanager","datatype-number","datatype-date","base","event-custom"],"path":null},"charts-base":{"requires":["dom","event-mouseenter","event-touch","graphics-group","axes","series-pie","series-line","series-marker","series-area","series-spline","series-column","series-bar","series-gantt","series-areaspline","series-combo","series-combospline","series-line-stacked","series-marker-stacked","series-area-stacked","series-spline-stacked","series-column-stacked","series-bar-stacked","series-areaspline-stacked","series-combo-stacked","series-combospline-stacked"],"path":null},"charts-ganttutils":{"requires":["escape","charts"],"path":null},"charts-label-cache":{"requires":"base","path":null},"g-bootstrap":{"requires":["node-pluginhost","g-bootstrap-warn","g-bootstrap-tooltip","g-bootstrap-collapse","g-bootstrap-tabview"],"path":"rt\/assets\/yui\/bootstrap\/g-bootstrap-min-0159ce1.js"},"g-bootstrap-collapse":{"requires":["plugin","transition","event","event-delegate"],"path":"rt\/assets\/yui\/bootstrap-collapse\/g-bootstrap-collapse-min-a554680.js"},"g-bootstrap-dropdown":{"requires":["plugin","event","event-outside"],"path":"rt\/assets\/yui\/bootstrap-dropdown\/g-bootstrap-dropdown-min-a554680.js"},"g-bootstrap-engine":{"requires":["node","base-base"],"path":"rt\/assets\/yui\/bootstrap-engine\/g-bootstrap-engine-min-a554680.js"},"g-bootstrap-modal":{"requires":["panel","plugin","transition","event","event-delegate"],"path":"rt\/assets\/yui\/bootstrap-modal\/g-bootstrap-modal-min-a554680.js"},"g-bootstrap-popover":{"requires":"g-bootstrap-tooltip","path":"rt\/assets\/yui\/bootstrap-popover\/g-bootstrap-popover-min-a554680.js"},"g-bootstrap-tabview":{"requires":["tabview","event-custom"],"path":"rt\/assets\/yui\/bootstrap-tabview\/g-bootstrap-tabview-min-a554680.js"},"g-bootstrap-tooltip":{"requires":["transition","widget","base","widget-position-align","widget-stack","widget-position","widget-position-constrain"],"path":"rt\/assets\/yui\/bootstrap-tooltip\/g-bootstrap-tooltip-min-a554680.js"},"g-bootstrap-typeahead":{"requires":["plugin","autocomplete","autocomplete-filters","autocomplete-highlighters"],"path":"rt\/assets\/yui\/bootstrap-typeahead\/g-bootstrap-typeahead-min-a554680.js"},"g-bootstrap-warn":{"requires":["plugin","transition","event","event-delegate"],"path":"rt\/assets\/yui\/bootstrap-warn\/g-bootstrap-warn-min-ca43173.js"},"graphics-roundrect":{"requires":"graphics","path":null},"series-cartesian":{"requires":"series-base","path":null},"series-gantt":{"requires":["series-cartesian","series-plot-util","charts-label-cache"],"path":null},"yql-console-element-list":{"requires":["yql-console-element-model","model-list"],"path":"rt\/assets\/yui\/yql-console-element-list\/yql-console-element-list-min-a554680.js"},"yql-console-element-model":{"requires":["base","escape","model"],"path":"rt\/assets\/yui\/yql-console-element-model\/yql-console-element-model-min-a554680.js"},"yql-console-optional-view":{"requires":["handlebars","view"],"path":"rt\/assets\/yui\/yql-console-optional-view\/yql-console-optional-view-min-e9805e6.js"},"yql-console-query-view":{"requires":["handlebars","view","yql-console-required-view","yql-console-optional-view"],"path":"rt\/assets\/yui\/yql-console-query-view\/yql-console-query-view-min-e9805e6.js"},"yql-console-querybuilder":{"requires":["base","yql-console-element-list","yql-console-query-view","json","io","handlebars","view","event-delegate","event-valuechange","substitute","node"],"path":"rt\/assets\/yui\/yql-console-querybuilder\/yql-console-querybuilder-min-a554680.js"},"yql-console-required-view":{"requires":["handlebars","view"],"path":"rt\/assets\/yui\/yql-console-required-view\/yql-console-required-view-min-e9805e6.js"},"yql-console-timeline":{"requires":["attribute","node","charts","charts-ganttutils"],"path":null}}},"yui2":{"combine":true,"root":"yui:2in3.4\/2.9.0\/build\/","patterns":{"yui2-":[]}}}};YUI_config.groups.yui2.patterns['yui2-']['configFn']=function(file){if(/-skin|reset|fonts|grids|base/.test(file.name)){file.type='css';file.path=file.path.replace(/\.js/,'.css')}}</script><script type="text/javascript" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_009.js"></script><script>Handlebars.registerHelper('html',function(html){return new Handlebars.SafeString(''+html);});</script><script type="text/javascript" src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/combo_011.js"></script>    
+
+
+
+</div></div></div></div></div><div style="left: 0px; top: 0px; z-index: 1010;" id="yui_3_11_0_3_1431611626138_69" class="tooltip yui3-widget yui3-bootstraptooltip yui3-widget-positioned yui3-widget-stacked tooltip-hidden"><div class="tooltip-arrow"></div><div id="yui_3_11_0_3_1431611626138_72" class="tooltip-inner tooltip-content"></div></div>
+        <!-- custom header -->
+<div class="ydn-header section"> <section> <div class="hd logo-cont">  <div class="logo"> <h2 class="secure"> <a href="https://developer.yahoo.com/">Yahoo Developer Network</a> </h2> </div> </div> </section> <section> <div class="menu-cont"> <nav> <ul class="header-nav"> <li class="item "> <a href="https://developer.yahoo.com/solutions/">Developer Solutions</a> <div class="pointer"></div> <div class="border"></div> <ul class="drop-down"> <li class="link "> <a href="https://developer.yahoo.com/solutions/multidevice/" title="">Multi-Device</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/solutions/media/" title="">Media</a> <div class="pointer"></div> <div class="border"></div> </li> </ul> </li><li class="item "> <a href="https://developer.yahoo.com/everything.html">APIs &amp; Tools</a> <div class="pointer"></div> <div class="border"></div> <ul class="drop-down"> <li class="link "> <a href="https://developer.yahoo.com/homepage/redirectlist.html?name=pure" title="">Pure</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/cocktails/mojito" title="">Mojito</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/yql/" title="">YQL</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/boss/" title="">BOSS</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/yui/" title="">YUI</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/connectedtv/" title="">Connected TV</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/boss/geo" title="">PlaceFinder</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/flickr/" title="">Flickr</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link more"> <a href="https://developer.yahoo.com/everything.html" title="">View all</a> <div class="pointer"></div> <div class="border"></div> </li> </ul> </li><li class="item "> <a href="https://developer.yahoo.com/community/">Community</a> <div class="pointer"></div> <div class="border"></div> <ul class="drop-down"> <li class="link "> <a href="https://developer.yahoo.com/forum/" title="">Forums</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/video/" title="">YDN Theater</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/events/" title="">Events</a> <div class="pointer"></div> <div class="border"></div> </li>  <li class="link "> <a href="https://developer.yahoo.com/homepage/redirectlist.html?name=ydn-tumblr-blog" title="">Blog</a> <div class="pointer"></div> <div class="border"></div> </li> </ul> </li> </ul> </nav> </div> </section> <section> <div id="search-form" class="ydn-search search-form-cont"> <form id="ydn-search" action="/find/" method="GET"> <fieldset> <legend>Search YDN</legend> <label for="search-box">Search YDN</label> <input autocomplete="off" aria-owns="yui_3_11_0_4_1431611626138_36" aria-expanded="false" aria-autocomplete="list" id="search-box" class="search-box yui3-aclist-input" name="q" placeholder="Search YDN" maxlength="500" type="text"> <input id="ei" name="ei" value="UTF-8" type="hidden"> <input id="vs" name="vs" value="developer.yahoo.com,developer.yahoo.net" type="hidden"> <label for="search-btn">Search YDN</label> <input id="search-btn" value="" class="search-btn" type="submit"> <div aria-hidden="true" style="width: 192px; left: 5px; top: 14px;" class="yui3-widget yui3-aclist yui3-widget-positioned yui3-aclist-hidden" id="yui_3_11_0_4_1431611626138_18"><div class="yui3-aclist-content" id="yui_3_11_0_4_1431611626138_20"><ul role="listbox" id="yui_3_11_0_4_1431611626138_36" class="yui3-aclist-list"></ul></div></div><div role="status" aria-live="polite" class="yui3-aclist-aria"></div></fieldset> </form> </div> </section> <section> <div class="user-cont">   <div class="top"> <a href="https://developer.yahoo.com/forum/user?id=JODZFPYZR7EWHI5YHAKRNRVI5E" class="tuc"> <img src="httpss://s.yimg.com/dh/ap/social/profile/profile_b24.png" alt="Rahul" class="prof-img"> <span class="salute">Rahul</span> <span class="down"></span> </a> <div class="pointer"></div> <div class="border"></div> </div> <ul class="drop-down"> <li class="link"><a href="https://developer.yahoo.com/forum/user?id=JODZFPYZR7EWHI5YHAKRNRVI5E">My Profile</a></li> <li class="link"><a href="https://developer.apps.yahoo.com/projects">My Projects</a></li> <li class="link"><a href="https://edit.yahoo.com/mc2.0/eval_profile?.lang=en-US&amp;.intl=us&amp;.done=http://developer.yahoo.com/yql/console/?env=store://0TxIGQMQbObzvU4Apia0V0">Account Info</a></li> <li class="link"><a href="https://login.yahoo.com/config/login?logout=1&amp;.direct=1&amp;.done=http://developer.yahoo.com/yql/console/?env=store://0TxIGQMQbObzvU4Apia0V0">Sign Out</a></li> </ul>  </div> </section> </div><!-- fe648.global.media.gq1.yahoo.com uncompressed/chunked Thu May 14 13:53:44 UTC 2015 -->
+
+
+<!-- yql header -->
+<div id="yql-header" class="sub navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+
+            <!-- YQL logo -->
+            <a data-rapid_p="1" id="yql-logo" href="https://developer.yahoo.com/yql/"></a>
+
+            <!-- Expanded Navigation -->
+            <ul class="nav">
+        <li class="active">
+            <a data-rapid_p="2" title="Open Console" href="https://developer.yahoo.com/yql/console/">Console</a>
+            <div class="pointer-img">
+                <a data-rapid_p="3" title="Current Page" href="https://developer.yahoo.com/yql/console/">
+                    <img src="YQL%20Console:%20select%20*%20from%20cricket.scorecard.live.summary_files/tri-c499c1b.png">
+                </a>
+            </div>
+            </li>
+            <li class="">
+                <a data-rapid_p="4" title="Open Table Editor" href="https://developer.yahoo.com/yql/editor/">Editor</a>
+                </li>
+            </ul>
+
+            <style>
+                #pipes-search-btn {
+                    width: 20px;
+                    height: 20px;
+                    background: transparent url(http://l.yimg.com/os/mit/media/m/ydn/images/search-icon-768914.png) 0 0 no-repeat;
+                    border: none;
+                    position: absolute;
+                    top: 6px;
+                    right: 9px;
+                    cursor: pointer;
+                }
+            </style>
+
+            <!-- Search bar -->
+
+            <!-- User options (help, sign-in/sign-out) -->
+            <span id="user-options" class="">
+                <ul class="nav pull-right">
+                    <li class="dropdown">
+                        <a data-rapid_p="5" href="#" class="dropdown-toggle rapidnofollow" data-toggle="dropdown">
+                            <span>Help</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a data-rapid_p="6" href="https://developer.yahoo.com/yql/guide/" target="blank">YQL Documentation</a></li>
+                            
+                            <li class="divider"></li>
+                            <li><a data-rapid_p="7" href="https://developer.yahoo.com/forum/YQL" target="blank">YQL Forum</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- modal panels -->
+<div style="width: 560px; left: 370px; top: 339px; z-index: 1031;" class="yui3-widget yui3-panel yui3-widget-positioned yui3-widget-modal yui3-widget-stacked yui3-panel-hidden" id="yui_3_11_0_3_1431611626138_166"><div id="panel" class="modal hide yui3-panel-content yui3-widget-stdmod"></div></div>
+<script id="create-prefix-alias-panel" type="text/x-template">
+    <div class="modal-header" id="dialogheader">
+        <button id="x-button" type="button" class="close">&times;</button>
+        <h3>Create your prefix alias</h3>
+    </div>
+    <form id="createuser" class="modal-body">
+        <div>
+            <p>Query aliases consist of two parts: a prefix (or user alias) that applies to all of your query aliases, and the alias itself.</p>
+            <p>First you need to choose your prefix alias. (e.g. yourname)</p>
+        </div>
+        <div class="aliasholder">
+            <input type="text" name="useralias" id="uaname" value="" placeholder="Prefix alias" />
+        </div>
+        <div id="qaWarningContainer" class="alert" style="display: none;">
+            <div id="qaWarning"></div>
+        </div>
+        <div>
+            <p>This prefix will be tied to your user account and you can only have one prefix per account. Although this prefix is associated with you, anyone can use the query aliases added to it.</p>
+        </div>
+        <input type="submit" class="hiddensubmit"/>
+    </form>
+    <div class="modal-footer">
+        <button id="next-button" class="btn btn-primary btn-primary disabled" name="next-button" value="Next">Next</button>
+        <button id="cancel-button" class="btn" name="cancel-button" value="Cancel">Cancel</button>
+    </div>
+</script>
+<script id="create-query-alias-panel" type="text/x-template">
+    <div class="modal-header" id="dialogheader">
+        <button id="x-button" type="button" class="close">&times;</button>
+        <h3>Create your query alias</h3>
+    </div>
+    <form id="createalias" class="modal-body">
+        <p>Please enter the query alias that that will run the YQL statement:</p>
+        <input id="qexample" name="theq" type="text" readonly="readonly" value="" class="span12">
+        <label for="queryalias">Query alias:</label>
+        <input type="text" name="queryalias" id="qaname" value="" class="span12">
+        <div id="qaWarningContainer" class="alert" style="display: none;">
+            <div id="qaWarning"></div>
+        </div>
+        <input type="submit" class="hiddensubmit"/>
+    </form>
+    <div class="modal-footer">
+        <button id="next-button" class="btn btn-primary btn-primary disabled" name="next-button" value="Next">Next</button>
+        <button id="cancel-button" class="btn" name="cancel-button" value="Cancel">Cancel</button>
+    </div>
+</script>
+<script id="final-endpoints-panel" type="text/x-template">
+    <div class="modal-header" id="dialogheader">
+        <button id="x-button" type="button" class="close">&times;</button>
+        <h3>Your query alias endpoints</h3>
+    </div>
+    <div id="finallias" class="modal-body">
+            <label>Public URL: (if available)</label>
+            <input type="text" id="publicurl" value="" readonly="readonly" class="span12">
+            <label>Authenticated URL:</label>
+            <input type="text" id="privateurl" value="" readonly="readonly" class="span12">
+    </div>
+    <div class="modal-footer">
+        <button id="close-button" class="btn" name="close-button" value="Close">Close</button>
+    </div>
+</script>
+<script id="permalink-panel" type="text/x-template">
+    <div class="yui3-widget-bd alert alert-perma" style="padding:0">
+        <a id="closeperma" class="close" style="top:auto;right:5px">×</a><br>
+        <div class="control-group" style="margin-bottom: 0">
+            <label style="width:auto;padding:5px" class="control-label" for="shortperma">Short:</label>
+            <div style="margin-left:48px" class="controls">
+                <input id="shortpermaurl" class="input-medium" name="shortperma" value="Please run the Query first" readonly="readonly" type="text">
+            </div>
+        </div>
+        <div class="control-group" style="margin-bottom: 0">
+            <label style="width:auto;padding:5px" class="control-label" for="longperma">Long:</label>
+            <div style="margin-left:48px" class="controls">
+                <input id="longpermaurl" style="width:205px" class="input-large" name="longperma" value="" readonly="readonly" type="text">
+            </div>
+        </div>
+    </div>
+</script>
+
+<!-- console statement -->
+
+
+<!-- datatables column -->
+
+
+
+<!-- user data column -->
+
+
+<!-- footer -->
+</body></html>
+<!-- fe3.yql.gq1.yahoo.com Thu May 14 13:53:44 UTC 2015 -->

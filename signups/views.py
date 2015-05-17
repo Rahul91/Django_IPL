@@ -47,7 +47,7 @@ def loggedin(request,id=1):
  	#args['form'] = ipl_scores()
  	args['loggedin'] = True
  	args['get_id']=User.objects.get(id=id)
-	return render(request,'loggedin.html',args)
+	return render(request,'loggedin_2.html',args)
 
 def invalid_login(request):
 	return render(request,'invalid_login.html')

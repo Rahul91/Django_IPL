@@ -1,0 +1,179 @@
+<html>  
+  <head><title>Live IPL Score</title> </head>
+<script type="text/javascript">
+
+
+function notifyMe(t) {
+  // Let's check if the browser supports notifications
+
+
+var xmlhttp;
+
+  if (window.XMLHttpRequest)
+    {
+      xmlhttp=new XMLHttpRequest();
+    }
+  else
+    {// code for IE6, IE5
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+
+  xmlhttp.onreadystatechange=function()
+    {
+      if (xmlhttp.readyState==4 || 1)
+      { 
+        if (xmlhttp.status==200)
+        {
+          //var response="aaya re";
+          //alert("vjvj");
+          var xmldoc=xmlhttp.responseXML;
+
+          var series_name=xmldoc.getElementsByTagName("series_name").item(0).firstChild.data;
+          var series_id=xmldoc.getElementsByTagName("series_id").item(0).firstChild.data;
+          var match_no=xmldoc.getElementsByTagName("mn").item(0).firstChild.data;
+          var stadium=xmldoc.getElementsByTagName("stadium").item(0).firstChild.data;
+
+          var team1=xmldoc.getElementsByTagName("fn").item(0).firstChild.data;
+          var team1_id=xmldoc.getElementsByTagName("i").item(0).firstChild.data;
+
+          var team2_id=xmldoc.getElementsByTagName("i").item(1).firstChild.data;
+          var team2=xmldoc.getElementsByTagName("fn").item(1).firstChild.data;
+
+          var over=xmldoc.getElementsByTagName("o").item(0).firstChild.data;
+
+          var batting_team=xmldoc.getElementsByTagName("i").item(3).firstChild.data;
+          //alert(batting_team);
+
+          var wicket=xmldoc.getElementsByTagName("w").item(0).firstChild.data;
+          var run=xmldoc.getElementsByTagName("r").item(0).firstChild.data;
+
+          var status=xmldoc.getElementsByTagName("ms").item(0).firstChild.data;
+          //alert(status);
+          
+          if (batting_team==team1_id)
+            {
+            var team_batting=team1;
+            }
+          else
+            {
+            var team_batting=team2;
+            }
+          //alert(team_batting);
+
+          var x=wicket;
+          //alert(x + wicket);
+          ///////////////////////////////////////
+          //var y=[];
+          //y.push(x);
+          //alert(y.length);
+          /////////////////////////////////////// 
+
+          if (series_id==12208)
+          {
+
+            //if (x==1 || x==2 || x==3 || x==4 || x==5 || x==6 || x==7 || x==8 || x==9)
+            if (run>=0)
+            {
+          /////////////////////////////////////////////////////////////////////
+
+                if (!("Notification" in window)) {
+                    alert("This browser does not support desktop notification");
+                  }
+
+                  // Let's check whether notification permissions have alredy been granted
+                  else if ((Notification.permission === "granted")) {
+                    // If it's okay let's create a notification
+                    if(status=="Innings Break")
+                    {
+                    var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ") : "+status);
+                    }
+                    else
+                    {
+                      var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ")");
+                    }
+                    
+                  }
+
+                  // Otherwise, we need to ask the user for permission
+                  else if (Notification.permission !== 'denied') {
+                    Notification.requestPermission(function (permission) {
+                      // If the user accepts, let's create a notification
+                      if (permission === "granted") {
+                        var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ")");
+                      }
+                    });
+                  }
+
+                 x=0;
+  
+              //location.reload();
+          ///////////////////////////////////////////////////////////////////////
+              }            
+            }
+        }
+       }
+       
+       else
+       {
+        alert("no");
+       }
+    }
+
+    xmlhttp.open("GET","https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20cricket.scorecard.live.summary&diagnostics=true&env=store%3A%2F%2F0TxIGQMQbObzvU4Apia0V0",true);
+    
+    xmlhttp.send();
+
+    setTimeout("location.reload(true);", t);
+
+ }
+</script>
+
+<body onload="JavaScript:notifyMe(120000);">
+
+<div style="float: right;">
+<a href="/accounts/logout/"><button style="border-radius: 28px;
+  background: #eeeeee;
+  cursor:pointer;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+ ">Logout</button></a>
+<!--a href="/unsuscribed/{{ get_id.id }}"--><button onclick="myFunction()" style="border-radius: 28px;
+  background: #eeeeee;
+  cursor:pointer;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+ ">Unsuscribe</button></a>
+ </div>
+<div> 
+<!--script type="text/javascript">
+function showAlert() { alert('1. Delhi Daredevils vs Sunrisers Hyderabad, 45th Match, Shaheed Veer Narayan Singh International Stadium, Raipur\nDelhi Daredevils 157/4 (20.0 Ovs) \nSunrisers Hyderabad 163/4 (20.0 Ovs)\n\n2. Kolkata Knight Riders vs Kings XI Punjab, 44th Match, Eden Gardens, Kolkata\nSunrisers Hyderabad 163/4 (20.0 Ovs)\nKolkata Knight Riders 184/9 (19.5 Ovs)'); }
+
+</script>
+
+<script type="text/javascript">
+function myFunction() {
+    if (confirm("Press a button!") == true) {
+        <a href="/unsuscribed/{{ get_id.id }}"></a>;
+    }else{
+      <a href="#"></a>
+    }
+}
+
+</script-->
+
+<div style="width:600px;height:500px;font-weight:normal;color:#2EBCD9;letter-spacing:1pt;word-spacing:2pt;font-size:50px;text-align:left;font-family:arial, helvetica, sans-serif;line-height:1;float:left;">If you are a sports lover and your office firewall does not even let you watch scores or you are too busy to watch score online, heres is something amazing for you, Absolotuly free. 
+<br><br>
+Enjoy hasel free, uninterrepted, scores notification right on your desktop :)
+ </div>
+  
+  <!--p>Click <a href="/accounts/profile/">here</a> to edit your profile information</p-->
+</div>
+</div>
+
+</body>
+</html>
