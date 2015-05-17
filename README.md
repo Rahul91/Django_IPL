@@ -12,7 +12,7 @@ Notification is the name of Project and signups is the App.
 #Logic Flow
 1. User visits, the home page of the website, if he is already registered, he can then directly go to Login page, if not he can then go to Register page for registration.
 2. If Registered properly, he will be routed to Registered-Successfully page. Now he can click the link present in this page to login.
-3. After logging-in, user can see a notification button on top left, to which on clicking, a Javascript alert pops up that shows the latest score of IPL.
+3. Thats it!!!. User will now, recieve notification on his desktop.
 4. User can now, either choose logout or unsuscribe, depending on his choice, he will be then directed to corressponding page. Unsuscribe will be directed to home page, where as logout will direct the user to logout page.
 
 #Technologies Used
