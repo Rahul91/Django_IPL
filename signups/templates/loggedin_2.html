@@ -49,7 +49,9 @@ var xmlhttp;
           var run=xmldoc.getElementsByTagName("r").item(0).firstChild.data;
 
           var status=xmldoc.getElementsByTagName("ms").item(0).firstChild.data;
-          //alert(status);
+          var target=xmldoc.getElementsByTagName("tg").item(0).firstChild.data;
+          var ing=xmldoc.getElementsByTagName("i").item(2).firstChild.data;
+          //alert(ing + target);
           
           if (batting_team==team1_id)
             {
@@ -87,6 +89,10 @@ var xmlhttp;
                     if(status=="Innings Break")
                     {
                     var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ") : "+status);
+                    }
+                    else if (ing==2)
+                    {
+                     var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ") | Target:"+target); 
                     }
                     else
                     {
