@@ -15,17 +15,18 @@ Notification is the name of Project and signups is the App.
 3. After logging-in, user can see a notification button on top left, to which on clicking, a Javascript alert pops up that shows the latest score of IPL.
 4. User can now, either choose logout or unsuscribe, depending on his choice, he will be then directed to corressponding page. Unsuscribe will be directed to home page, where as logout will direct the user to logout page.
 
+#Technologies Used
 
-#Features
-1. Although the content of Javascript <i>alert()</i> is hardcoded, I  have written a script, namely  <b>ipl_result.py</b>  that scrapes the latest score from internet and outputs on screens, now this output can be feed into alert() manually. So the maintainer doesnot have to search for lastest score, instead he can just run the script and feed the output in the  <i>alert()</i>
-
-2. Settings.py is not hardcoded, for template paths and directories. Therefore, git clone will work fine.
-
-#Scope/Improvments
-1.  <i>alert()</i> is hardcoded, thus it must be changed/refreshed by maintainer every day once, for the notification to be relevent.
-2. As the code is deployed on heroku, after refresh, it again needs to be pushed to heroku masters.
-3. The database used is sqlite3, which is not suited for bigger applicaition with high traffic, therefore it is recomended to migrate to MySql or Postgrace.
-
+   1. Python(Core)
+   2. Django(Framework)
+   3. Javascript(The Programming backbone for HMTL)
+   4. HTML(becasue, its needed!!!)
+   5. AJAX(For Server-side Communication)
+   6. CSS(For Styling)
+   7. XML(Data)
+   8. Yahoo API
+   9. Sqlite3(Database)
+  
 #Cloning the repository
 
 1. Create a virtualenv, activate it and get in:
