@@ -21,14 +21,23 @@ var xmlhttp;
 
   xmlhttp.onreadystatechange=function()
     {
+      try
+      {
       if (xmlhttp.readyState==4 || 1)
       { 
+        //alert("abdbfc");
         if (xmlhttp.status==200)
         {
           //var response="aaya re";
           //alert("vjvj");
           var xmldoc=xmlhttp.responseXML;
+          /*if (xmldoc==null)
+          {
+            throw new Exception("No Data found");
+          }*/
 
+          var res=xmldoc.getElementsByTagName("results").item(0).firstChild.data;
+          //alert("joj");
           var series_name=xmldoc.getElementsByTagName("series_name").item(0).firstChild.data;
           var series_id=xmldoc.getElementsByTagName("series_id").item(0).firstChild.data;
           var match_no=xmldoc.getElementsByTagName("mn").item(0).firstChild.data;
@@ -130,8 +139,9 @@ var xmlhttp;
             }
 
             else
-            {
-              var notification = new Notification("No IPL Match is Live right now!!!");  
+            { 
+              //alert("no ipl");
+              var notification = new Notification("No IPL Match is Live right now else!!!");  
             }
         }
        }
@@ -139,9 +149,34 @@ var xmlhttp;
        else
        {
         //alert("no");
+        //alert("no match");
         var notification = new Notification("No Match is Live right now!!!");
        }
     }
+     catch ( e ){
+      //alert("No Match is Live right now!!!");
+      //var notification = new Notification("No Match is Live right now!!!");
+      if (!("Notification" in window))
+       {
+        alert("This browser does not support desktop notification");
+        }
+        else if ((Notification.permission === "granted")) 
+        {
+          //alert("There is no Live IPL Match !!");
+        var notification = new Notification("No IPL Match is Live right now!!!");
+        }
+      //alert("There is no Live IPL Match !!");
+
+        else if (Notification.permission !== 'denied') {
+              Notification.requestPermission(function (permission) {
+                      // If the user accepts, let's create a notification
+                if (permission === "granted") {
+                 var notification = new Notification("No IPL Match is Live right now!!!");
+                      }
+                    });
+                  }
+     }
+   } 
 
     xmlhttp.open("GET","https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20cricket.scorecard.live.summary&diagnostics=true&env=store%3A%2F%2F0TxIGQMQbObzvU4Apia0V0",true);
     
@@ -152,7 +187,7 @@ var xmlhttp;
  }
 </script>
 
-<body onload="JavaScript:notifyMe(120000);">
+<body onload="JavaScript:notifyMe(180000);">
 
 <div style="float: right;">
 <a href="/accounts/logout/"><button style="border-radius: 28px;
