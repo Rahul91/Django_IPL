@@ -58,7 +58,8 @@ var xmlhttp;
           var run=xmldoc.getElementsByTagName("r").item(0).firstChild.data;
 
           var status=xmldoc.getElementsByTagName("ms").item(0).firstChild.data;
-          
+          //var target=xmldoc.getElementsByTagName("tg").item(0).firstChild.data;
+
           var ing=xmldoc.getElementsByTagName("i").item(2).firstChild.data;
           //alert(ing + target);
           
@@ -99,8 +100,8 @@ var xmlhttp;
                     }
                     else if (ing==2 && status!="Match Ended")
                     {
-                      var target=xmldoc.getElementsByTagName("ms").item(0).firstChild.data;
-                     var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ") | Target:"+target); 
+                      var target=xmldoc.getElementsByTagName("tg").item(0).firstChild.data;
+                     var notification = new Notification(team1+" v/s "+team2+"  :  "+ team_batting +"(" +run+"/"+wicket+" Over:"+over+ ") | Target:"+ target); 
                     }
                     else if (status=="Match Ended")
                     {
