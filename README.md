@@ -1,5 +1,8 @@
 # Django_IPL
-A Python-django based Website
+Get live IPL score notification, right on your desktop.
+
+If you are totally into cricket and your office firewall doesnot permit you to even see scores or you are too busy to see scores online, here is something useful for you guys.
+Just log in to this awesome useful website, sit back and do your work, you will get notification of live scores.
 
 #Project Detail
 A python-django based website, that lets user, suscribe to lastest Pepsi IPL 2015 scores and news.
